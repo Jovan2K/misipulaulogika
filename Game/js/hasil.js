@@ -44,10 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const elTotalPersen = document.getElementById("nilai-persentase-total");
     const elTotalPoin = document.getElementById("nilai-poin-total");
     const elPredikat = document.getElementById("predikat-pencapaian");
+    const elMode = document.getElementById("mode-pencapaian");
     const elRingkasan = document.getElementById("ringkasan-pencapaian");
 
     if (elNama) {
         elNama.textContent = namaPemain;
+    }
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, true);
     }
     if (elTotalPersen) {
         elTotalPersen.textContent = persentaseAkhir + "%";

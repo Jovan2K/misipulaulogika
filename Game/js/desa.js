@@ -84,7 +84,61 @@ let soalSesiDesa = [];
 let indeksTahapDesa = 0;
 let skorDesa = 0;
 let kesempatanSalahTahapIni = 0;
+let detikTahapDesa = 0;
+let intervalTimerDesa = null;
 let tahapSudahSelesai = false;
+
+/**
+ * Mengambil konfigurasi aturan skoring Desa sesuai mode kesulitan aktif.
+ */
+function dapatkanAturanDesa() {
+    if (typeof ambilAturanMode === "function") {
+        return ambilAturanMode().desa;
+    }
+    return {
+        penaltiSalah: 12,
+        skorMinimalSoal: 0,
+        gagalLangsungNol: false,
+        batasWaktuDetik: 0,
+        intervalPenaltiWaktu: 0,
+        penaltiPerIntervalWaktu: 0
+    };
+}
+
+/**
+ * Menghitung poin yang diperoleh pada satu soal Desa sesuai mode kesulitan.
+ */
+function hitungPoinTahapDesa() {
+    const aturan = dapatkanAturanDesa();
+    if (aturan.gagalLangsungNol && kesempatanSalahTahapIni > 0) {
+        return 0;
+    }
+    const penguranganSalah = kesempatanSalahTahapIni * aturan.penaltiSalah;
+    const penguranganWaktu = typeof hitungPenaltiWaktu === "function"
+        ? hitungPenaltiWaktu(detikTahapDesa, aturan)
+        : 0;
+    return Math.max(aturan.skorMinimalSoal, 20 - penguranganSalah - penguranganWaktu);
+}
+
+/**
+ * Menjalankan timer per tahap soal Desa apabila mode memakai target waktu.
+ */
+function mulaiTimerDesa() {
+    if (intervalTimerDesa) {
+        clearInterval(intervalTimerDesa);
+        intervalTimerDesa = null;
+    }
+    const aturan = dapatkanAturanDesa();
+    if (!aturan.batasWaktuDetik || aturan.batasWaktuDetik <= 0) {
+        return;
+    }
+    intervalTimerDesa = setInterval(function () {
+        if (!tahapSudahSelesai) {
+            detikTahapDesa++;
+            perbaruiStatusDesa();
+        }
+    }, 1000);
+}
 
 /**
  * Mengacak urutan array menggunakan algoritma Fisher-Yates.
@@ -141,14 +195,27 @@ function buatHTMLGambarUbinDesa(nilaiUbin, jenisSoal) {
 }
 
 /**
- * Memperbarui indikator tahap dan skor pada halaman Desa.
+ * Memperbarui indikator mode, tahap, waktu, dan skor pada halaman Desa.
  */
 function perbaruiStatusDesa() {
+    const aturan = dapatkanAturanDesa();
+    const elMode = document.getElementById("indikator-mode-desa");
     const elTahap = document.getElementById("indikator-tahap-desa");
     const elSkor = document.getElementById("indikator-skor-desa");
 
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, false);
+    }
     if (elTahap) {
         elTahap.textContent = (indeksTahapDesa + 1) + "/5";
+    }
+    if (typeof perbaruiTampilanWaktuMisi === "function") {
+        perbaruiTampilanWaktuMisi(
+            "item-waktu-desa",
+            "indikator-waktu-desa",
+            detikTahapDesa,
+            aturan.batasWaktuDetik
+        );
     }
     if (elSkor) {
         elSkor.textContent = String(skorDesa);
@@ -177,6 +244,7 @@ function tampilkanSoalDesa() {
     }
 
     kesempatanSalahTahapIni = 0;
+    detikTahapDesa = 0;
     tahapSudahSelesai = false;
 
     const badgeJenis = document.getElementById("jenis-pola-desa");
@@ -241,8 +309,8 @@ function periksaJawabanDesa(pilihanPemain, tombolDiklik, soal) {
         tahapSudahSelesai = true;
         tombolDiklik.classList.add("opsi-benar");
 
-        // Hitung tambahan skor (maksimal 20 poin per soal untuk 5 soal = 100 poin)
-        const poinTahap = Math.max(10, 20 - (kesempatanSalahTahapIni * 5));
+        // Hitung tambahan skor berdasarkan mode kesulitan
+        const poinTahap = hitungPoinTahapDesa();
         skorDesa += poinTahap;
         perbaruiStatusDesa();
 
@@ -261,7 +329,7 @@ function periksaJawabanDesa(pilihanPemain, tombolDiklik, soal) {
         });
 
         putarSFX("correct.mp3");
-        tampilkanPesanDesa("Benar! " + soal.penjelasan, "sukses");
+        tampilkanPesanDesa("Benar! (+" + poinTahap + " poin) " + soal.penjelasan, "sukses");
 
         const tombolNext = document.getElementById("tombol-next-desa");
         if (tombolNext) {
@@ -270,12 +338,15 @@ function periksaJawabanDesa(pilihanPemain, tombolDiklik, soal) {
                 indeksTahapDesa < 4 ? "Lanjut" : "Selesai";
         }
     } else {
+        const aturan = dapatkanAturanDesa();
         kesempatanSalahTahapIni++;
         tombolDiklik.classList.add("opsi-salah");
         tombolDiklik.disabled = true;
         putarSFX("wrong.mp3");
         tampilkanPesanDesa(
-            "Belum tepat, coba pilih ubin yang lain ya!",
+            aturan.gagalLangsungNol
+                ? "Belum tepat! Pada Mode Hard, kesalahan membuat poin soal ini 0. Tetap pilih ubin yang benar untuk lanjut."
+                : "Belum tepat (-" + aturan.penaltiSalah + " poin), coba pilih ubin yang lain ya!",
             "kesalahan"
         );
     }
@@ -1273,6 +1344,7 @@ function mulaiSesiSoalDesa(daftarSoal) {
     soalSesiDesa = soalTeracak.slice(0, 5);
     indeksTahapDesa = 0;
     skorDesa = 0;
+    mulaiTimerDesa();
     tampilkanSoalDesa();
 }
 

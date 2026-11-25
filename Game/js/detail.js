@@ -63,10 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const skor = ambilSkor();
 
     const elNama = document.getElementById("nama-pemain-detail");
+    const elMode = document.getElementById("mode-pemain-detail");
     const elTotal = document.getElementById("total-persen-detail");
 
     if (elNama) {
         elNama.textContent = namaPemain;
+    }
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, false);
     }
     if (elTotal) {
         elTotal.textContent = hitungTotalPersentaseSkor() + "%";

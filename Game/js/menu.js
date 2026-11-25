@@ -6,6 +6,27 @@
  */
 
 /**
+ * Memperbarui tampilan tombol pilihan mode kesulitan dan keterangannya pada Halaman Awal.
+ */
+function perbaruiTampilanModeAwal(modeOpsional) {
+    const modeAktif = modeOpsional || (typeof ambilModeKesulitan === "function" ? ambilModeKesulitan() : "normal");
+    const daftarTombolMode = document.querySelectorAll(".tombol-mode");
+    const elDeskripsiMode = document.getElementById("deskripsi-mode-awal");
+
+    daftarTombolMode.forEach(function (tombol) {
+        const kode = tombol.getAttribute("data-mode");
+        const dipilih = kode === modeAktif;
+        tombol.classList.toggle("aktif", dipilih);
+        tombol.setAttribute("aria-pressed", dipilih ? "true" : "false");
+    });
+
+    if (elDeskripsiMode && typeof ambilAturanMode === "function") {
+        const aturan = ambilAturanMode(modeAktif);
+        elDeskripsiMode.textContent = "Mode " + aturan.label + ": " + aturan.deskripsiSingkat;
+    }
+}
+
+/**
  * Memperbarui tampilan informasi progres tersimpan pada Halaman Awal (index.html).
  */
 function perbaruiTampilanProgresAwal() {
@@ -17,6 +38,8 @@ function perbaruiTampilanProgresAwal() {
     }
 
     const data = ambilDataPermainan();
+    perbaruiTampilanModeAwal(data.modeKesulitan);
+
     const adaProgres = typeof apakahAdaProgresTersimpan === "function"
         ? apakahAdaProgresTersimpan()
         : Boolean(data.namaPemain);
@@ -35,10 +58,15 @@ function perbaruiTampilanProgresAwal() {
             const totalPersen = typeof hitungTotalPersentaseSkor === "function"
                 ? hitungTotalPersentaseSkor()
                 : 0;
+            const labelMode = typeof ambilAturanMode === "function"
+                ? ambilAturanMode(data.modeKesulitan).label
+                : "Normal";
             infoProgres.innerHTML =
                 "Progres Tersimpan: <span>" +
                 namaTampil +
-                " (" +
+                " (Mode: " +
+                labelMode +
+                " | " +
                 selesai +
                 "/4 Wilayah | Skor: " +
                 totalPersen +
@@ -78,6 +106,18 @@ function inisialisasiHalamanAwal() {
 
     perbaruiTampilanProgresAwal();
 
+    const daftarTombolMode = document.querySelectorAll(".tombol-mode");
+    daftarTombolMode.forEach(function (tombol) {
+        tombol.addEventListener("click", function () {
+            const modeBaru = tombol.getAttribute("data-mode");
+            if (typeof simpanModeKesulitan === "function" && modeBaru) {
+                simpanModeKesulitan(modeBaru);
+                perbaruiTampilanModeAwal(modeBaru);
+                perbaruiTampilanProgresAwal();
+            }
+        });
+    });
+
     // Tampilkan notifikasi jika pemain baru saja melakukan reset dari halaman lain
     if (typeof ambilDanHapusNotifikasiReset === "function" && ambilDanHapusNotifikasiReset()) {
         tampilkanPesanHalamanAwal(
@@ -99,6 +139,10 @@ function inisialisasiHalamanAwal() {
         }
 
         simpanNamaPemain(nama);
+        const tombolModeAktif = document.querySelector(".tombol-mode.aktif");
+        if (tombolModeAktif && typeof simpanModeKesulitan === "function") {
+            simpanModeKesulitan(tombolModeAktif.getAttribute("data-mode"));
+        }
         // BGM halaman awal dihentikan ketika pemain berpindah halaman
         pindahHalaman("narasi.html", true);
     }
@@ -329,9 +373,13 @@ function inisialisasiHalamanPeta() {
 
     const namaPemain = ambilNamaPemain();
     const progres = ambilProgres();
+    const elBadgeMode = document.getElementById("badge-mode-peta");
 
     if (elemenNamaPemain) {
         elemenNamaPemain.textContent = namaPemain;
+    }
+    if (elBadgeMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elBadgeMode, true);
     }
 
     const konfigurasiWilayah = [

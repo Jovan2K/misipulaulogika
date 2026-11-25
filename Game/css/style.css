@@ -472,6 +472,46 @@ body::before {
     color: var(--warna-kuning-hangat);
 }
 
+.item-status-misi span.mode-easy {
+    color: #74c69d;
+}
+
+.item-status-misi span.mode-normal {
+    color: var(--warna-kuning-hangat);
+}
+
+.item-status-misi span.mode-hard {
+    color: #ff8585;
+}
+
+.item-status-misi span.waktu-terlewati {
+    color: #ff7b72;
+}
+
+.lencana-mode {
+    font-family: var(--font-pixel-ui);
+    display: inline-block;
+    border: 2px solid var(--ui-garis-pixel);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 12px;
+}
+
+.lencana-mode.mode-easy {
+    background-color: #2d6a4f;
+    color: #ecfdf5;
+}
+
+.lencana-mode.mode-normal {
+    background-color: var(--warna-kuning-hangat);
+    color: #131c2b;
+}
+
+.lencana-mode.mode-hard {
+    background-color: #b91c1c;
+    color: #ffffff;
+}
+
 /* Dialog Modal Konfirmasi Sederhana & Ramah Anak */
 .lapisan-modal-pixel {
     position: fixed;

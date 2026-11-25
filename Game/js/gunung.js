@@ -10,7 +10,58 @@ let indeksTahapGunung = 0;
 let skorGunung = 0;
 let kesalahanTahapGunung = 0;
 let jumlahObjekTersusun = 0;
+let detikTahapGunung = 0;
+let intervalTimerGunung = null;
+let tahapGunungSelesai = false;
 let objekTahapAktif = [];
+
+/**
+ * Mengambil konfigurasi aturan skoring Gunung sesuai mode kesulitan aktif.
+ */
+function dapatkanAturanGunung() {
+    if (typeof ambilAturanMode === "function") {
+        return ambilAturanMode().gunung;
+    }
+    return {
+        penaltiSalah: 8,
+        skorMinimalSoal: 0,
+        batasWaktuDetik: 0,
+        intervalPenaltiWaktu: 0,
+        penaltiPerIntervalWaktu: 0
+    };
+}
+
+/**
+ * Menghitung poin satu tahap Gunung sesuai mode kesulitan aktif.
+ */
+function hitungPoinTahapGunung() {
+    const aturan = dapatkanAturanGunung();
+    const penguranganSalah = kesalahanTahapGunung * aturan.penaltiSalah;
+    const penguranganWaktu = typeof hitungPenaltiWaktu === "function"
+        ? hitungPenaltiWaktu(detikTahapGunung, aturan)
+        : 0;
+    return Math.max(aturan.skorMinimalSoal, 20 - penguranganSalah - penguranganWaktu);
+}
+
+/**
+ * Menjalankan timer per tahap Gunung apabila mode memakai batas waktu.
+ */
+function mulaiTimerGunung() {
+    if (intervalTimerGunung) {
+        clearInterval(intervalTimerGunung);
+        intervalTimerGunung = null;
+    }
+    const aturan = dapatkanAturanGunung();
+    if (!aturan.batasWaktuDetik || aturan.batasWaktuDetik <= 0) {
+        return;
+    }
+    intervalTimerGunung = setInterval(function () {
+        if (!tahapGunungSelesai) {
+            detikTahapGunung++;
+            perbaruiStatusGunung();
+        }
+    }, 1000);
+}
 
 /**
  * Mengacak urutan array menggunakan algoritma Fisher-Yates.
@@ -42,18 +93,31 @@ function buatJalurGambarObjekGunung(namaObjek) {
 }
 
 /**
- * Memperbarui indikator tahap, progres objek, dan skor di halaman Gunung.
+ * Memperbarui indikator mode, tahap, progres objek, waktu, dan skor di halaman Gunung.
  */
 function perbaruiStatusGunung() {
+    const aturan = dapatkanAturanGunung();
+    const elMode = document.getElementById("indikator-mode-gunung");
     const elTahap = document.getElementById("indikator-tahap-gunung");
     const elObjek = document.getElementById("indikator-objek-gunung");
     const elSkor = document.getElementById("indikator-skor-gunung");
 
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, false);
+    }
     if (elTahap) {
         elTahap.textContent = (indeksTahapGunung + 1) + "/5";
     }
     if (elObjek) {
         elObjek.textContent = jumlahObjekTersusun + "/" + objekTahapAktif.length;
+    }
+    if (typeof perbaruiTampilanWaktuMisi === "function") {
+        perbaruiTampilanWaktuMisi(
+            "item-waktu-gunung",
+            "indikator-waktu-gunung",
+            detikTahapGunung,
+            aturan.batasWaktuDetik
+        );
     }
     if (elSkor) {
         elSkor.textContent = String(skorGunung);
@@ -114,11 +178,12 @@ function klasifikasikanObjekGunung(indeksObjek, kategoriPilihan) {
         const soal = soalSesiGunung[indeksTahapGunung];
 
         if (jumlahObjekTersusun === objekTahapAktif.length) {
-            const poinTahap = Math.max(10, 20 - (kesalahanTahapGunung * 5));
+            tahapGunungSelesai = true;
+            const poinTahap = hitungPoinTahapGunung();
             skorGunung += poinTahap;
             perbaruiStatusGunung();
 
-            tampilkanPesanGunung("Hebat! " + soal.penjelasan, "sukses");
+            tampilkanPesanGunung("Hebat! (+" + poinTahap + " poin) " + soal.penjelasan, "sukses");
 
             const tombolNext = document.getElementById("tombol-next-gunung");
             if (tombolNext) {
@@ -134,10 +199,11 @@ function klasifikasikanObjekGunung(indeksObjek, kategoriPilihan) {
             );
         }
     } else {
+        const aturan = dapatkanAturanGunung();
         kesalahanTahapGunung++;
         putarSFX("wrong.mp3");
         tampilkanPesanGunung(
-            'Belum tepat untuk "' + dataObjek.nama + '". Coba pilih kotak yang satunya ya!',
+            'Belum tepat untuk "' + dataObjek.nama + '" (-' + aturan.penaltiSalah + ' poin). Coba pilih kotak yang satunya ya!',
             "kesalahan"
         );
     }
@@ -154,6 +220,8 @@ function tampilkanSoalGunung() {
 
     kesalahanTahapGunung = 0;
     jumlahObjekTersusun = 0;
+    detikTahapGunung = 0;
+    tahapGunungSelesai = false;
     objekTahapAktif = acakArrayGunung(soal.objek);
 
     const elIdSoal = document.getElementById("id-soal-gunung");
@@ -1478,6 +1546,7 @@ function mulaiSesiSoalGunung(daftarSoal) {
     soalSesiGunung = soalTeracak.slice(0, 5);
     indeksTahapGunung = 0;
     skorGunung = 0;
+    mulaiTimerGunung();
     tampilkanSoalGunung();
 }
 

@@ -45,10 +45,120 @@ let soalSesiKastil = [];
 let indeksTahapKastil = 0;
 let skorKastil = 0;
 let percobaanGagalTahapIni = 0;
+let langkahOptimalTahapIni = 0;
+let detikTahapKastil = 0;
+let intervalTimerKastil = null;
 let daftarInstruksi = [];
 let posisiPemain = { baris: 0, kolom: 0 };
 let sedangMenjalankan = false;
 let tahapKastilSelesai = false;
+
+/**
+ * Mengambil konfigurasi aturan skoring Kastil sesuai mode kesulitan aktif.
+ */
+function dapatkanAturanKastil() {
+    if (typeof ambilAturanMode === "function") {
+        return ambilAturanMode().kastil;
+    }
+    return {
+        penaltiGagal: 8,
+        skorMinimalSoal: 0,
+        pakaiPenaltiLangkah: true,
+        toleransiLangkah: 2,
+        penaltiPerLangkahBerlebih: 2,
+        batasWaktuDetik: 0,
+        intervalPenaltiWaktu: 0,
+        penaltiPerIntervalWaktu: 0
+    };
+}
+
+/**
+ * Menghitung jumlah langkah terpendek (BFS) pada papan grid 4 x 4.
+ */
+function hitungLangkahOptimalKastil(soal) {
+    if (!soal || !soal.awal || !soal.tujuan) {
+        return 0;
+    }
+    const antrean = [{ baris: soal.awal.baris, kolom: soal.awal.kolom, jarak: 0 }];
+    const dikunjungi = {};
+    dikunjungi[soal.awal.baris + "," + soal.awal.kolom] = true;
+    const arah = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1]
+    ];
+
+    while (antrean.length > 0) {
+        const saatIni = antrean.shift();
+        if (saatIni.baris === soal.tujuan.baris && saatIni.kolom === soal.tujuan.kolom) {
+            return saatIni.jarak;
+        }
+        for (let i = 0; i < arah.length; i++) {
+            const nb = saatIni.baris + arah[i][0];
+            const nk = saatIni.kolom + arah[i][1];
+            const kunci = nb + "," + nk;
+            if (
+                nb >= 0 && nb < 4 && nk >= 0 && nk < 4 &&
+                !dikunjungi[kunci] &&
+                !apakahRintangan(soal, nb, nk)
+            ) {
+                dikunjungi[kunci] = true;
+                antrean.push({ baris: nb, kolom: nk, jarak: saatIni.jarak + 1 });
+            }
+        }
+    }
+    return Array.isArray(soal.contohSolusi) ? soal.contohSolusi.length : 0;
+}
+
+/**
+ * Menghitung rincian poin satu tahap Kastil sesuai mode kesulitan aktif.
+ */
+function hitungPoinTahapKastil() {
+    const aturan = dapatkanAturanKastil();
+    const penguranganGagal = percobaanGagalTahapIni * aturan.penaltiGagal;
+    let penguranganLangkah = 0;
+    if (aturan.pakaiPenaltiLangkah && langkahOptimalTahapIni > 0) {
+        const kelebihan = Math.max(
+            0,
+            daftarInstruksi.length - langkahOptimalTahapIni - (aturan.toleransiLangkah || 0)
+        );
+        penguranganLangkah = kelebihan * (aturan.penaltiPerLangkahBerlebih || 0);
+    }
+    const penguranganWaktu = typeof hitungPenaltiWaktu === "function"
+        ? hitungPenaltiWaktu(detikTahapKastil, aturan)
+        : 0;
+    return {
+        poin: Math.max(
+            aturan.skorMinimalSoal,
+            20 - penguranganGagal - penguranganLangkah - penguranganWaktu
+        ),
+        penguranganGagal: penguranganGagal,
+        penguranganLangkah: penguranganLangkah,
+        penguranganWaktu: penguranganWaktu
+    };
+}
+
+/**
+ * Menjalankan timer per tahap Kastil apabila mode memakai batas waktu
+ * (timer berhenti sejenak saat animasi karakter berjalan).
+ */
+function mulaiTimerKastil() {
+    if (intervalTimerKastil) {
+        clearInterval(intervalTimerKastil);
+        intervalTimerKastil = null;
+    }
+    const aturan = dapatkanAturanKastil();
+    if (!aturan.batasWaktuDetik || aturan.batasWaktuDetik <= 0) {
+        return;
+    }
+    intervalTimerKastil = setInterval(function () {
+        if (!tahapKastilSelesai && !sedangMenjalankan) {
+            detikTahapKastil++;
+            perbaruiStatusKastil();
+        }
+    }, 1000);
+}
 
 /**
  * Mengacak urutan array menggunakan algoritma Fisher-Yates.
@@ -74,18 +184,38 @@ function apakahRintangan(soal, baris, kolom) {
 }
 
 /**
- * Memperbarui indikator tahap, jumlah langkah, dan skor Algoritma.
+ * Memperbarui indikator mode, tahap, jumlah langkah, waktu, dan skor Algoritma.
  */
 function perbaruiStatusKastil() {
+    const aturan = dapatkanAturanKastil();
+    const elMode = document.getElementById("indikator-mode-kastil");
     const elTahap = document.getElementById("indikator-tahap-kastil");
     const elLangkah = document.getElementById("indikator-langkah-kastil");
     const elSkor = document.getElementById("indikator-skor-kastil");
 
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, false);
+    }
     if (elTahap) {
         elTahap.textContent = (indeksTahapKastil + 1) + "/5";
     }
     if (elLangkah) {
-        elLangkah.textContent = String(daftarInstruksi.length);
+        if (aturan.pakaiPenaltiLangkah && langkahOptimalTahapIni > 0) {
+            const batasIdeal = langkahOptimalTahapIni + (aturan.toleransiLangkah || 0);
+            elLangkah.textContent =
+                daftarInstruksi.length +
+                (aturan.toleransiLangkah === 0 ? " (Ideal " + batasIdeal + ")" : " (Maks " + batasIdeal + ")");
+        } else {
+            elLangkah.textContent = String(daftarInstruksi.length);
+        }
+    }
+    if (typeof perbaruiTampilanWaktuMisi === "function") {
+        perbaruiTampilanWaktuMisi(
+            "item-waktu-kastil",
+            "indikator-waktu-kastil",
+            detikTahapKastil,
+            aturan.batasWaktuDetik
+        );
     }
     if (elSkor) {
         elSkor.textContent = String(skorKastil);
@@ -299,6 +429,19 @@ function jalankanInstruksiKastil() {
 
     let langkahKe = 0;
 
+    function tanganiGagalEksekusiKastil(pesan, jenis) {
+        const aturan = dapatkanAturanKastil();
+        sedangMenjalankan = false;
+        percobaanGagalTahapIni++;
+        aturStatusTombolKontrol(false);
+        renderAntreanInstruksi(-1);
+        putarSFX("wrong.mp3");
+        tampilkanPesanKastil(
+            pesan + " (-" + aturan.penaltiGagal + " poin)",
+            jenis
+        );
+    }
+
     function eksekusiLangkahBerikutnya() {
         if (langkahKe >= daftarInstruksi.length) {
             // Seluruh instruksi selesai dieksekusi, periksa apakah sampai di tujuan
@@ -310,14 +453,28 @@ function jalankanInstruksiKastil() {
                 tahapKastilSelesai = true;
                 aturStatusTombolKontrol(true);
 
-                const poinTahap = Math.max(10, 20 - (percobaanGagalTahapIni * 5));
-                skorKastil += poinTahap;
+                const hasilPoin = hitungPoinTahapKastil();
+                skorKastil += hasilPoin.poin;
                 perbaruiStatusKastil();
                 renderAntreanInstruksi(-1);
 
                 putarSFX("correct.mp3");
+                let detailPotongan = [];
+                if (hasilPoin.penguranganGagal > 0) {
+                    detailPotongan.push("gagal -" + hasilPoin.penguranganGagal);
+                }
+                if (hasilPoin.penguranganLangkah > 0) {
+                    detailPotongan.push("langkah boros -" + hasilPoin.penguranganLangkah);
+                }
+                if (hasilPoin.penguranganWaktu > 0) {
+                    detailPotongan.push("waktu -" + hasilPoin.penguranganWaktu);
+                }
+                const infoPotongan = detailPotongan.length > 0
+                    ? " (" + detailPotongan.join(", ") + ")"
+                    : "";
+
                 tampilkanPesanKastil(
-                    "Hebat! Kamu berhasil sampai di Tujuan!",
+                    "Hebat! Kamu berhasil sampai di Tujuan (+" + hasilPoin.poin + " poin)" + infoPotongan + "!",
                     "sukses"
                 );
 
@@ -328,12 +485,7 @@ function jalankanInstruksiKastil() {
                         indeksTahapKastil < 4 ? "Lanjut" : "Selesai";
                 }
             } else {
-                sedangMenjalankan = false;
-                percobaanGagalTahapIni++;
-                aturStatusTombolKontrol(false);
-                renderAntreanInstruksi(-1);
-                putarSFX("wrong.mp3");
-                tampilkanPesanKastil(
+                tanganiGagalEksekusiKastil(
                     "Belum sampai di Tujuan. Perbaiki langkahmu lalu tekan Jalankan!",
                     "peringatan"
                 );
@@ -350,12 +502,7 @@ function jalankanInstruksiKastil() {
 
         // 1. Periksa apakah keluar dari batas grid 4 x 4
         if (barisBaru < 0 || barisBaru > 3 || kolomBaru < 0 || kolomBaru > 3) {
-            sedangMenjalankan = false;
-            percobaanGagalTahapIni++;
-            aturStatusTombolKontrol(false);
-            renderAntreanInstruksi(-1);
-            putarSFX("wrong.mp3");
-            tampilkanPesanKastil(
+            tanganiGagalEksekusiKastil(
                 "Langkah ke-" + (langkahKe + 1) + " keluar dari papan! Tekan Hapus untuk mencoba lagi.",
                 "kesalahan"
             );
@@ -366,12 +513,7 @@ function jalankanInstruksiKastil() {
         if (apakahRintangan(soal, barisBaru, kolomBaru)) {
             posisiPemain = { baris: barisBaru, kolom: kolomBaru };
             renderPapanGridKastil(jejak, { baris: barisBaru, kolom: kolomBaru });
-            sedangMenjalankan = false;
-            percobaanGagalTahapIni++;
-            aturStatusTombolKontrol(false);
-            renderAntreanInstruksi(-1);
-            putarSFX("wrong.mp3");
-            tampilkanPesanKastil(
+            tanganiGagalEksekusiKastil(
                 "Menabrak batu rintangan! Tekan Hapus dan cari jalan lain.",
                 "kesalahan"
             );
@@ -401,6 +543,8 @@ function tampilkanSoalKastil() {
     }
 
     percobaanGagalTahapIni = 0;
+    detikTahapKastil = 0;
+    langkahOptimalTahapIni = hitungLangkahOptimalKastil(soal);
     daftarInstruksi = [];
     sedangMenjalankan = false;
     tahapKastilSelesai = false;
@@ -2142,6 +2286,7 @@ function mulaiSesiSoalKastil(daftarSoal) {
     soalSesiKastil = soalTeracak.slice(0, 5);
     indeksTahapKastil = 0;
     skorKastil = 0;
+    mulaiTimerKastil();
     tampilkanSoalKastil();
 }
 

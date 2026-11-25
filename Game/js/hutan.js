@@ -149,7 +149,26 @@ const TAHAP_HUTAN = [
 let indeksTahapHutan = 0;
 let jumlahKomponenTerpasang = 0;
 let jumlahKesalahanHutan = 0;
+let detikAktifHutan = 0;
+let tahapHutanSelesai = false;
+let intervalTimerHutan = null;
 let idMaterialSedangDipilih = null;
+
+/**
+ * Mengambil konfigurasi aturan skoring Hutan sesuai mode kesulitan aktif.
+ */
+function dapatkanAturanHutan() {
+    if (typeof ambilAturanMode === "function") {
+        return ambilAturanMode().hutan;
+    }
+    return {
+        penaltiSalah: 10,
+        skorMinimal: 0,
+        batasWaktuDetik: 0,
+        intervalPenaltiWaktu: 0,
+        penaltiPerIntervalWaktu: 0
+    };
+}
 
 /**
  * Mengacak urutan elemen di dalam array (Fisher-Yates Shuffle).
@@ -166,30 +185,67 @@ function acakArray(daftar) {
 }
 
 /**
- * Menghitung skor Dekomposisi saat ini berdasarkan ketepatan penempatan komponen.
- * Setiap kesalahan mengurangi 5 poin dari nilai maksimum 100 (minimal 20).
+ * Menghitung skor Dekomposisi saat ini berdasarkan aturan mode kesulitan aktif
+ * (penalti kesalahan serta penalti waktu pada Mode Hard).
  */
 function hitungSkorDekomposisi() {
-    const pengurangan = jumlahKesalahanHutan * 5;
-    return Math.max(20, 100 - pengurangan);
+    const aturan = dapatkanAturanHutan();
+    const penguranganSalah = jumlahKesalahanHutan * aturan.penaltiSalah;
+    const penguranganWaktu = typeof hitungPenaltiWaktu === "function"
+        ? hitungPenaltiWaktu(detikAktifHutan, aturan)
+        : 0;
+    return Math.max(aturan.skorMinimal, 100 - penguranganSalah - penguranganWaktu);
 }
 
 /**
- * Memperbarui tampilan indikator tahap, jumlah komponen (mis. 1/5), dan skor.
+ * Menjalankan timer aktif untuk wilayah Hutan apabila mode menggunakan batas waktu.
+ */
+function mulaiTimerHutan() {
+    if (intervalTimerHutan) {
+        clearInterval(intervalTimerHutan);
+        intervalTimerHutan = null;
+    }
+    const aturan = dapatkanAturanHutan();
+    if (!aturan.batasWaktuDetik || aturan.batasWaktuDetik <= 0) {
+        return;
+    }
+    intervalTimerHutan = setInterval(function () {
+        if (!tahapHutanSelesai) {
+            detikAktifHutan++;
+            perbaruiIndikatorHutan();
+        }
+    }, 1000);
+}
+
+/**
+ * Memperbarui tampilan indikator mode, tahap, jumlah komponen, waktu, dan skor.
  */
 function perbaruiIndikatorHutan() {
     const dataTahap = TAHAP_HUTAN[indeksTahapHutan];
     const totalKomponen = dataTahap.komponenTarget.length;
+    const aturan = dapatkanAturanHutan();
 
+    const elMode = document.getElementById("indikator-mode-hutan");
     const elTahap = document.getElementById("indikator-tahap-hutan");
     const elKomponen = document.getElementById("indikator-komponen-hutan");
     const elSkor = document.getElementById("indikator-skor-hutan");
 
+    if (elMode && typeof terapkanBadgeMode === "function") {
+        terapkanBadgeMode(elMode, false);
+    }
     if (elTahap) {
         elTahap.textContent = (indeksTahapHutan + 1) + "/" + TAHAP_HUTAN.length;
     }
     if (elKomponen) {
         elKomponen.textContent = jumlahKomponenTerpasang + "/" + totalKomponen;
+    }
+    if (typeof perbaruiTampilanWaktuMisi === "function") {
+        perbaruiTampilanWaktuMisi(
+            "item-waktu-hutan",
+            "indikator-waktu-hutan",
+            detikAktifHutan,
+            aturan.batasWaktuDetik
+        );
     }
     if (elSkor) {
         elSkor.textContent = String(hitungSkorDekomposisi());
@@ -228,6 +284,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
 
     // Periksa apakah material adalah pengecoh
     if (idMaterial === dataTahap.pengecoh.id) {
+        const aturan = dapatkanAturanHutan();
         jumlahKesalahanHutan++;
         perbaruiIndikatorHutan();
         putarSFX("wrong.mp3");
@@ -236,7 +293,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
             elemenSlot.classList.remove("salah-drop");
         }, 500);
         tampilkanPesanHutan(
-            dataTahap.pengecoh.namaMaterial + " adalah benda pengecoh! Pilih bahan yang lain.",
+            dataTahap.pengecoh.namaMaterial + " adalah benda pengecoh! (-" + aturan.penaltiSalah + " poin) Pilih bahan yang lain.",
             "kesalahan"
         );
         return;
@@ -266,6 +323,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
         putarSFX("correct.mp3");
 
         if (jumlahKomponenTerpasang === dataTahap.komponenTarget.length) {
+            tahapHutanSelesai = true;
             const tombolNext = document.getElementById("tombol-next-hutan");
             if (tombolNext) {
                 tombolNext.classList.remove("tersembunyi");
@@ -285,6 +343,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
             );
         }
     } else {
+        const aturan = dapatkanAturanHutan();
         jumlahKesalahanHutan++;
         perbaruiIndikatorHutan();
         putarSFX("wrong.mp3");
@@ -293,7 +352,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
             elemenSlot.classList.remove("salah-drop");
         }, 500);
         tampilkanPesanHutan(
-            "Belum tepat untuk " + elemenSlot.getAttribute("data-nama-bagian") + ". Coba lagi ya!",
+            "Belum tepat untuk " + elemenSlot.getAttribute("data-nama-bagian") + " (-" + aturan.penaltiSalah + " poin). Coba lagi ya!",
             "peringatan"
         );
     }
@@ -305,6 +364,7 @@ function prosesPenempatanMaterial(idMaterial, elemenSlot) {
 function tampilkanTahapHutan() {
     const dataTahap = TAHAP_HUTAN[indeksTahapHutan];
     jumlahKomponenTerpasang = 0;
+    tahapHutanSelesai = false;
     idMaterialSedangDipilih = null;
 
     const judulTahap = document.getElementById("judul-tahap-hutan");
@@ -439,5 +499,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    mulaiTimerHutan();
     tampilkanTahapHutan();
 });

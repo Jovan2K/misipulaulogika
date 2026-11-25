@@ -66,6 +66,48 @@
                 <div id="pesan-validasi-awal" class="kotak-pesan tersembunyi" role="alert"></div>
             </div>
 
+            <div class="pemilih-mode-awal" role="group" aria-labelledby="label-mode-kesulitan">
+                <div id="label-mode-kesulitan" class="label-input">Pilih Mode Kesulitan</div>
+                <div class="baris-mode-awal">
+                    <button
+                        type="button"
+                        class="tombol-mode mode-easy"
+                        data-mode="easy"
+                        aria-pressed="false"
+                        data-sfx-hover
+                        data-sfx-click
+                    >
+                        <span class="judul-mode">Easy</span>
+                        <span class="sub-mode">Santai</span>
+                    </button>
+                    <button
+                        type="button"
+                        class="tombol-mode mode-normal aktif"
+                        data-mode="normal"
+                        aria-pressed="true"
+                        data-sfx-hover
+                        data-sfx-click
+                    >
+                        <span class="judul-mode">Normal</span>
+                        <span class="sub-mode">Seimbang</span>
+                    </button>
+                    <button
+                        type="button"
+                        class="tombol-mode mode-hard"
+                        data-mode="hard"
+                        aria-pressed="false"
+                        data-sfx-hover
+                        data-sfx-click
+                    >
+                        <span class="judul-mode">Hard</span>
+                        <span class="sub-mode">Sulit + Waktu</span>
+                    </button>
+                </div>
+                <p id="deskripsi-mode-awal" class="deskripsi-mode-awal">
+                    Penalti ketat (-8 s/d -12), bisa 0 poin jika sering salah, dan Kastil menghitung efisiensi langkah.
+                </p>
+            </div>
+
             <div class="baris-tombol">
                 <button
                     type="button"
