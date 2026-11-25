@@ -557,11 +557,13 @@ img.gambar-belum-tersedia {
     box-shadow: 3px 3px 0px var(--ui-garis-pixel);
     color: var(--ui-teks-utama);
     font-family: var(--font-pixel-baca);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     text-align: center;
-    padding: 8px;
+    padding: 4px;
     overflow: hidden;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 img.gambar-belum-tersedia::before {

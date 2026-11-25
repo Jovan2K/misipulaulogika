@@ -356,7 +356,7 @@ body.latar-pulau {
     font-size: var(--ukuran-nama-wilayah);
     color: var(--langit-putih);
     text-shadow: 2px 2px 0 var(--ui-garis-pixel);
-    margin-bottom: 4px;
+    margin-bottom: 14px;
 }
 
 .pilar-wilayah-peta {

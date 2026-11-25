@@ -13,204 +13,204 @@ Dokumen ini memuat daftar aset gambar tambahan yang dibutuhkan untuk setiap **pi
 
 ### 1. Kategori Benda & Informasi Penting (98 Aset)
 
-- [ ] `jaket-tebal.png` — Ilustrasi pilihan benda **Jaket Tebal** untuk misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
-- [ ] `kompas-penunjuk-arah.png` — Ilustrasi pilihan benda **Kompas Penunjuk Arah** untuk misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
-- [ ] `senter-kepala.png` — Ilustrasi pilihan benda **Senter Kepala** untuk misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
-- [ ] `peta-jalur-gua.png` — Ilustrasi pilihan benda **Peta Jalur Gua** untuk misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
-- [ ] `air-panas.png` — Ilustrasi pilihan benda **Air Panas** untuk misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
-- [ ] `kantung-teh-celup.png` — Ilustrasi pilihan benda **Kantung Teh Celup** untuk misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
-- [ ] `bibit-tanaman.png` — Ilustrasi pilihan benda **Bibit Tanaman** untuk misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
-- [ ] `sekop-kecil-dan-air.png` — Ilustrasi pilihan benda **Sekop Kecil & Air** untuk misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
-- [ ] `ukuran-panjang-papan.png` — Ilustrasi pilihan benda **Ukuran Panjang Papan** untuk misi *Menghitung Luas Persegi Panjang* (gunung-005).
-- [ ] `ukuran-lebar-papan.png` — Ilustrasi pilihan benda **Ukuran Lebar Papan** untuk misi *Menghitung Luas Persegi Panjang* (gunung-005).
-- [ ] `jas-hujan.png` — Ilustrasi pilihan benda **Jas Hujan** untuk misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
-- [ ] `payung-kuat.png` — Ilustrasi pilihan benda **Payung Kuat** untuk misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
-- [ ] `cairan-antiseptik.png` — Ilustrasi pilihan benda **Cairan Antiseptik** untuk misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
-- [ ] `plester-luka.png` — Ilustrasi pilihan benda **Plester Luka** untuk misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
-- [ ] `pensil-gambar.png` — Ilustrasi pilihan benda **Pensil Gambar** untuk misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
-- [ ] `kertas-gambar-putih.png` — Ilustrasi pilihan benda **Kertas Gambar Putih** untuk misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
-- [ ] `jarak-tempuh-jalan.png` — Ilustrasi pilihan benda **Jarak Tempuh Jalan** untuk misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
-- [ ] `kecepatan-kayuhan-sepeda.png` — Ilustrasi pilihan benda **Kecepatan Kayuhan Sepeda** untuk misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
-- [ ] `kain-dan-rangka-tenda.png` — Ilustrasi pilihan benda **Kain & Rangka Tenda** untuk misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
-- [ ] `pasak-dan-tali-pengikat.png` — Ilustrasi pilihan benda **Pasak & Tali Pengikat** untuk misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
-- [ ] `sikat-gigi.png` — Ilustrasi pilihan benda **Sikat Gigi** untuk misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
-- [ ] `pasta-gigi.png` — Ilustrasi pilihan benda **Pasta Gigi** untuk misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
-- [ ] `judul-buku.png` — Ilustrasi pilihan benda **Judul Buku** untuk misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
-- [ ] `kode-kategori-rak.png` — Ilustrasi pilihan benda **Kode Kategori Rak** untuk misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
-- [ ] `buah-jeruk-segar.png` — Ilustrasi pilihan benda **Buah Jeruk Segar** untuk misi *Membuat Jus Jeruk Segar* (gunung-013).
-- [ ] `alat-pemeras-dan-gelas.png` — Ilustrasi pilihan benda **Alat Pemeras & Gelas** untuk misi *Membuat Jus Jeruk Segar* (gunung-013).
-- [ ] `helm-pelindung-kepala.png` — Ilustrasi pilihan benda **Helm Pelindung Kepala** untuk misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
-- [ ] `rem-sepeda-yang-berfungsi.png` — Ilustrasi pilihan benda **Rem Sepeda yang Berfungsi** untuk misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
-- [ ] `total-harga-barang.png` — Ilustrasi pilihan benda **Total Harga Barang** untuk misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
-- [ ] `jumlah-uang-yang-dibayar.png` — Ilustrasi pilihan benda **Jumlah Uang yang Dibayar** untuk misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
-- [ ] `jarum-dan-benang-jahit.png` — Ilustrasi pilihan benda **Jarum & Benang Jahit** untuk misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
-- [ ] `kancing-pengganti.png` — Ilustrasi pilihan benda **Kancing Pengganti** untuk misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
-- [ ] `dayung-kayu.png` — Ilustrasi pilihan benda **Dayung Kayu** untuk misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
-- [ ] `rompi-pelampung.png` — Ilustrasi pilihan benda **Rompi Pelampung** untuk misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
-- [ ] `alamat-lengkap-penerima.png` — Ilustrasi pilihan benda **Alamat Lengkap Penerima** untuk misi *Mengirim Surat Pos ke Teman* (gunung-018).
-- [ ] `perangko-pengiriman.png` — Ilustrasi pilihan benda **Perangko Pengiriman** untuk misi *Mengirim Surat Pos ke Teman* (gunung-018).
-- [ ] `air-mengalir-bersih.png` — Ilustrasi pilihan benda **Air Mengalir Bersih** untuk misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
-- [ ] `sabun-cuci-tangan.png` — Ilustrasi pilihan benda **Sabun Cuci Tangan** untuk misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
-- [ ] `waktu-mencapai-garis-finis.png` — Ilustrasi pilihan benda **Waktu Mencapai Garis Finis** untuk misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
-- [ ] `urutan-masuk-garis-finis.png` — Ilustrasi pilihan benda **Urutan Masuk Garis Finis** untuk misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
-- [ ] `roti-tawar.png` — Ilustrasi pilihan benda **Roti Tawar** untuk misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
-- [ ] `isian-keju-dan-sayur.png` — Ilustrasi pilihan benda **Isian Keju & Sayur** untuk misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
-- [ ] `termometer-suhu.png` — Ilustrasi pilihan benda **Termometer Suhu** untuk misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
-- [ ] `angka-hasil-pengukuran.png` — Ilustrasi pilihan benda **Angka Hasil Pengukuran** untuk misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
-- [ ] `gembor-selang-air.png` — Ilustrasi pilihan benda **Gembor / Selang Air** untuk misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
-- [ ] `sumber-air-bersih.png` — Ilustrasi pilihan benda **Sumber Air Bersih** untuk misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
-- [ ] `kunci-gembok-yang-sesuai.png` — Ilustrasi pilihan benda **Kunci Gembok yang Sesuai** untuk misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
-- [ ] `lubang-kunci-gembok.png` — Ilustrasi pilihan benda **Lubang Kunci Gembok** untuk misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
-- [ ] `panjang-ketiga-sisi-segitiga.png` — Ilustrasi pilihan benda **Panjang Ketiga Sisi Segitiga** untuk misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
-- [ ] `satuan-ukuran-panjang-meter.png` — Ilustrasi pilihan benda **Satuan Ukuran Panjang (Meter)** untuk misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
-- [ ] `buku-materi-dan-latihan-soal.png` — Ilustrasi pilihan benda **Buku Materi & Latihan Soal** untuk misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
-- [ ] `alat-tulis-dan-buku-catatan.png` — Ilustrasi pilihan benda **Alat Tulis & Buku Catatan** untuk misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
-- [ ] `kerangka-bambu-dan-kertas.png` — Ilustrasi pilihan benda **Kerangka Bambu & Kertas** untuk misi *Membuat Layang-layang Sederhana* (gunung-027).
-- [ ] `benang-dan-lem-perekat.png` — Ilustrasi pilihan benda **Benang & Lem Perekat** untuk misi *Membuat Layang-layang Sederhana* (gunung-027).
-- [ ] `jam-keberangkatan-kereta.png` — Ilustrasi pilihan benda **Jam Keberangkatan Kereta** untuk misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
-- [ ] `nomor-jalur-dan-stasiun.png` — Ilustrasi pilihan benda **Nomor Jalur & Stasiun** untuk misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
-- [ ] `sapu-lantai.png` — Ilustrasi pilihan benda **Sapu Lantai** untuk misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
-- [ ] `pengki-dan-alat-pel.png` — Ilustrasi pilihan benda **Pengki & Alat Pel** untuk misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
-- [ ] `beras-yang-sudah-dicuci.png` — Ilustrasi pilihan benda **Beras yang Sudah Dicuci** untuk misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
-- [ ] `takaran-air-yang-tepat.png` — Ilustrasi pilihan benda **Takaran Air yang Tepat** untuk misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
-- [ ] `teleskop-teropong-bintang.png` — Ilustrasi pilihan benda **Teleskop / Teropong Bintang** untuk misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
-- [ ] `langit-malam-yang-cerah.png` — Ilustrasi pilihan benda **Langit Malam yang Cerah** untuk misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
-- [ ] `lebar-bahu-dan-dada.png` — Ilustrasi pilihan benda **Lebar Bahu & Dada** untuk misi *Menentukan Ukuran Baju Seragam* (gunung-032).
-- [ ] `panjang-badan-tinggi.png` — Ilustrasi pilihan benda **Panjang Badan / Tinggi** untuk misi *Menentukan Ukuran Baju Seragam* (gunung-032).
-- [ ] `wadah-tertutup-rapat.png` — Ilustrasi pilihan benda **Wadah Tertutup Rapat** untuk misi *Menyimpan Makanan Mudah Basi* (gunung-033).
-- [ ] `lemari-pendingin-kulkas.png` — Ilustrasi pilihan benda **Lemari Pendingin (Kulkas)** untuk misi *Menyimpan Makanan Mudah Basi* (gunung-033).
-- [ ] `jumlah-pengunjung.png` — Ilustrasi pilihan benda **Jumlah Pengunjung** untuk misi *Membeli Tiket Masuk Museum* (gunung-034).
-- [ ] `harga-tiket-per-orang.png` — Ilustrasi pilihan benda **Harga Tiket per Orang** untuk misi *Membeli Tiket Masuk Museum* (gunung-034).
-- [ ] `kok-shuttlecock.png` — Ilustrasi pilihan benda **Kok (Shuttlecock)** untuk misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
-- [ ] `kabel-dan-adaptor-charger.png` — Ilustrasi pilihan benda **Kabel & Adaptor Charger** untuk misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
-- [ ] `sumber-listrik-stopkontak.png` — Ilustrasi pilihan benda **Sumber Listrik / Stopkontak** untuk misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
-- [ ] `warna-lampu-penyeberangan.png` — Ilustrasi pilihan benda **Warna Lampu Penyeberangan** untuk misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
-- [ ] `kondisi-lalu-lintas-kiri-kanan.png` — Ilustrasi pilihan benda **Kondisi Lalu Lintas Kiri-Kanan** untuk misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
-- [ ] `kertas-warna-dan-gunting.png` — Ilustrasi pilihan benda **Kertas Warna & Gunting** untuk misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
-- [ ] `lem-kertas-dan-kertas-dasar.png` — Ilustrasi pilihan benda **Lem Kertas & Kertas Dasar** untuk misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
-- [ ] `daftar-nilai-setiap-ulangan.png` — Ilustrasi pilihan benda **Daftar Nilai Setiap Ulangan** untuk misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
-- [ ] `banyaknya-ulangan-yang-diikuti.png` — Ilustrasi pilihan benda **Banyaknya Ulangan yang Diikuti** untuk misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
-- [ ] `pakaian-renang.png` — Ilustrasi pilihan benda **Pakaian Renang** untuk misi *Berenang di Kolam Renang Olahraga* (gunung-040).
-- [ ] `lebar-sungai.png` — Ilustrasi pilihan benda **Lebar Sungai** untuk misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
-- [ ] `panjang-dan-kekuatan-kayu.png` — Ilustrasi pilihan benda **Panjang & Kekuatan Kayu** untuk misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
-- [ ] `air-bersih-dan-filter-oksigen.png` — Ilustrasi pilihan benda **Air Bersih & Filter Oksigen** untuk misi *Merawat Ikan Hias di Akuarium* (gunung-042).
-- [ ] `pakan-ikan-teratur.png` — Ilustrasi pilihan benda **Pakan Ikan Teratur** untuk misi *Merawat Ikan Hias di Akuarium* (gunung-042).
-- [ ] `kertas-kado.png` — Ilustrasi pilihan benda **Kertas Kado** untuk misi *Membungkus Kado Ulang Tahun* (gunung-043).
-- [ ] `gunting-dan-selotip.png` — Ilustrasi pilihan benda **Gunting & Selotip** untuk misi *Membungkus Kado Ulang Tahun* (gunung-043).
-- [ ] `nama-nomor-ruang-kelas.png` — Ilustrasi pilihan benda **Nama / Nomor Ruang Kelas** untuk misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
-- [ ] `denah-gedung-sekolah.png` — Ilustrasi pilihan benda **Denah Gedung Sekolah** untuk misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
-- [ ] `telur-ayam-dan-sedikit-garam.png` — Ilustrasi pilihan benda **Telur Ayam & Sedikit Garam** untuk misi *Membuat Telur Dadar di Dapur* (gunung-045).
-- [ ] `wajan-dan-kompor.png` — Ilustrasi pilihan benda **Wajan & Kompor** untuk misi *Membuat Telur Dadar di Dapur* (gunung-045).
-- [ ] `alat-timbangan-yang-tepat.png` — Ilustrasi pilihan benda **Alat Timbangan yang Tepat** untuk misi *Menimbang Berat Buah di Pasar* (gunung-046).
-- [ ] `angka-berat-pada-timbangan.png` — Ilustrasi pilihan benda **Angka Berat pada Timbangan** untuk misi *Menimbang Berat Buah di Pasar* (gunung-046).
-- [ ] `huruf-awal-judul-buku.png` — Ilustrasi pilihan benda **Huruf Awal Judul Buku** untuk misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
-- [ ] `urutan-abjad-a-sampai-z.png` — Ilustrasi pilihan benda **Urutan Abjad A sampai Z** untuk misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
-- [ ] `sinar-matahari-dan-angin.png` — Ilustrasi pilihan benda **Sinar Matahari & Angin** untuk misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
-- [ ] `tiang-jemuran-dan-jepitan.png` — Ilustrasi pilihan benda **Tiang Jemuran & Jepitan** untuk misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
-- [ ] `teks-pesan-bersandi.png` — Ilustrasi pilihan benda **Teks Pesan Bersandi** untuk misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
-- [ ] `jumlah-geseran-huruf-kunci.png` — Ilustrasi pilihan benda **Jumlah Geseran Huruf (Kunci)** untuk misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
-- [ ] `buku-pelajaran-jadwal-senin.png` — Ilustrasi pilihan benda **Buku Pelajaran Jadwal Senin** untuk misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
-- [ ] `kotak-pensil-dan-alat-tulis.png` — Ilustrasi pilihan benda **Kotak Pensil & Alat Tulis** untuk misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
+- [x] `jaket-tebal.png` — Ilustrasi pilihan benda **Jaket Tebal** untuk misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
+- [x] `kompas-penunjuk-arah.png` — Ilustrasi pilihan benda **Kompas Penunjuk Arah** untuk misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
+- [x] `senter-kepala.png` — Ilustrasi pilihan benda **Senter Kepala** untuk misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
+- [x] `peta-jalur-gua.png` — Ilustrasi pilihan benda **Peta Jalur Gua** untuk misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
+- [x] `air-panas.png` — Ilustrasi pilihan benda **Air Panas** untuk misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
+- [x] `kantung-teh-celup.png` — Ilustrasi pilihan benda **Kantung Teh Celup** untuk misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
+- [x] `bibit-tanaman.png` — Ilustrasi pilihan benda **Bibit Tanaman** untuk misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
+- [x] `sekop-kecil-dan-air.png` — Ilustrasi pilihan benda **Sekop Kecil & Air** untuk misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
+- [x] `ukuran-panjang-papan.png` — Ilustrasi pilihan benda **Ukuran Panjang Papan** untuk misi *Menghitung Luas Persegi Panjang* (gunung-005).
+- [x] `ukuran-lebar-papan.png` — Ilustrasi pilihan benda **Ukuran Lebar Papan** untuk misi *Menghitung Luas Persegi Panjang* (gunung-005).
+- [x] `jas-hujan.png` — Ilustrasi pilihan benda **Jas Hujan** untuk misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
+- [x] `payung-kuat.png` — Ilustrasi pilihan benda **Payung Kuat** untuk misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
+- [x] `cairan-antiseptik.png` — Ilustrasi pilihan benda **Cairan Antiseptik** untuk misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
+- [x] `plester-luka.png` — Ilustrasi pilihan benda **Plester Luka** untuk misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
+- [x] `pensil-gambar.png` — Ilustrasi pilihan benda **Pensil Gambar** untuk misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
+- [x] `kertas-gambar-putih.png` — Ilustrasi pilihan benda **Kertas Gambar Putih** untuk misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
+- [x] `jarak-tempuh-jalan.png` — Ilustrasi pilihan benda **Jarak Tempuh Jalan** untuk misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
+- [x] `kecepatan-kayuhan-sepeda.png` — Ilustrasi pilihan benda **Kecepatan Kayuhan Sepeda** untuk misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
+- [x] `kain-dan-rangka-tenda.png` — Ilustrasi pilihan benda **Kain & Rangka Tenda** untuk misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
+- [x] `pasak-dan-tali-pengikat.png` — Ilustrasi pilihan benda **Pasak & Tali Pengikat** untuk misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
+- [x] `sikat-gigi.png` — Ilustrasi pilihan benda **Sikat Gigi** untuk misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
+- [x] `pasta-gigi.png` — Ilustrasi pilihan benda **Pasta Gigi** untuk misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
+- [x] `judul-buku.png` — Ilustrasi pilihan benda **Judul Buku** untuk misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
+- [x] `kode-kategori-rak.png` — Ilustrasi pilihan benda **Kode Kategori Rak** untuk misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
+- [x] `buah-jeruk-segar.png` — Ilustrasi pilihan benda **Buah Jeruk Segar** untuk misi *Membuat Jus Jeruk Segar* (gunung-013).
+- [x] `alat-pemeras-dan-gelas.png` — Ilustrasi pilihan benda **Alat Pemeras & Gelas** untuk misi *Membuat Jus Jeruk Segar* (gunung-013).
+- [x] `helm-pelindung-kepala.png` — Ilustrasi pilihan benda **Helm Pelindung Kepala** untuk misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
+- [x] `rem-sepeda-yang-berfungsi.png` — Ilustrasi pilihan benda **Rem Sepeda yang Berfungsi** untuk misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
+- [x] `total-harga-barang.png` — Ilustrasi pilihan benda **Total Harga Barang** untuk misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
+- [x] `jumlah-uang-yang-dibayar.png` — Ilustrasi pilihan benda **Jumlah Uang yang Dibayar** untuk misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
+- [x] `jarum-dan-benang-jahit.png` — Ilustrasi pilihan benda **Jarum & Benang Jahit** untuk misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
+- [x] `kancing-pengganti.png` — Ilustrasi pilihan benda **Kancing Pengganti** untuk misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
+- [x] `dayung-kayu.png` — Ilustrasi pilihan benda **Dayung Kayu** untuk misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
+- [x] `rompi-pelampung.png` — Ilustrasi pilihan benda **Rompi Pelampung** untuk misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
+- [x] `alamat-lengkap-penerima.png` — Ilustrasi pilihan benda **Alamat Lengkap Penerima** untuk misi *Mengirim Surat Pos ke Teman* (gunung-018).
+- [x] `perangko-pengiriman.png` — Ilustrasi pilihan benda **Perangko Pengiriman** untuk misi *Mengirim Surat Pos ke Teman* (gunung-018).
+- [x] `air-mengalir-bersih.png` — Ilustrasi pilihan benda **Air Mengalir Bersih** untuk misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
+- [x] `sabun-cuci-tangan.png` — Ilustrasi pilihan benda **Sabun Cuci Tangan** untuk misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
+- [x] `waktu-mencapai-garis-finis.png` — Ilustrasi pilihan benda **Waktu Mencapai Garis Finis** untuk misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
+- [x] `urutan-masuk-garis-finis.png` — Ilustrasi pilihan benda **Urutan Masuk Garis Finis** untuk misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
+- [x] `roti-tawar.png` — Ilustrasi pilihan benda **Roti Tawar** untuk misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
+- [x] `isian-keju-dan-sayur.png` — Ilustrasi pilihan benda **Isian Keju & Sayur** untuk misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
+- [x] `termometer-suhu.png` — Ilustrasi pilihan benda **Termometer Suhu** untuk misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
+- [x] `angka-hasil-pengukuran.png` — Ilustrasi pilihan benda **Angka Hasil Pengukuran** untuk misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
+- [x] `gembor-selang-air.png` — Ilustrasi pilihan benda **Gembor / Selang Air** untuk misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
+- [x] `sumber-air-bersih.png` — Ilustrasi pilihan benda **Sumber Air Bersih** untuk misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
+- [x] `kunci-gembok-yang-sesuai.png` — Ilustrasi pilihan benda **Kunci Gembok yang Sesuai** untuk misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
+- [x] `lubang-kunci-gembok.png` — Ilustrasi pilihan benda **Lubang Kunci Gembok** untuk misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
+- [x] `panjang-ketiga-sisi-segitiga.png` — Ilustrasi pilihan benda **Panjang Ketiga Sisi Segitiga** untuk misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
+- [x] `satuan-ukuran-panjang-meter.png` — Ilustrasi pilihan benda **Satuan Ukuran Panjang (Meter)** untuk misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
+- [x] `buku-materi-dan-latihan-soal.png` — Ilustrasi pilihan benda **Buku Materi & Latihan Soal** untuk misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
+- [x] `alat-tulis-dan-buku-catatan.png` — Ilustrasi pilihan benda **Alat Tulis & Buku Catatan** untuk misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
+- [x] `kerangka-bambu-dan-kertas.png` — Ilustrasi pilihan benda **Kerangka Bambu & Kertas** untuk misi *Membuat Layang-layang Sederhana* (gunung-027).
+- [x] `benang-dan-lem-perekat.png` — Ilustrasi pilihan benda **Benang & Lem Perekat** untuk misi *Membuat Layang-layang Sederhana* (gunung-027).
+- [x] `jam-keberangkatan-kereta.png` — Ilustrasi pilihan benda **Jam Keberangkatan Kereta** untuk misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
+- [x] `nomor-jalur-dan-stasiun.png` — Ilustrasi pilihan benda **Nomor Jalur & Stasiun** untuk misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
+- [x] `sapu-lantai.png` — Ilustrasi pilihan benda **Sapu Lantai** untuk misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
+- [x] `pengki-dan-alat-pel.png` — Ilustrasi pilihan benda **Pengki & Alat Pel** untuk misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
+- [x] `beras-yang-sudah-dicuci.png` — Ilustrasi pilihan benda **Beras yang Sudah Dicuci** untuk misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
+- [x] `takaran-air-yang-tepat.png` — Ilustrasi pilihan benda **Takaran Air yang Tepat** untuk misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
+- [x] `teleskop-teropong-bintang.png` — Ilustrasi pilihan benda **Teleskop / Teropong Bintang** untuk misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
+- [x] `langit-malam-yang-cerah.png` — Ilustrasi pilihan benda **Langit Malam yang Cerah** untuk misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
+- [x] `lebar-bahu-dan-dada.png` — Ilustrasi pilihan benda **Lebar Bahu & Dada** untuk misi *Menentukan Ukuran Baju Seragam* (gunung-032).
+- [x] `panjang-badan-tinggi.png` — Ilustrasi pilihan benda **Panjang Badan / Tinggi** untuk misi *Menentukan Ukuran Baju Seragam* (gunung-032).
+- [x] `wadah-tertutup-rapat.png` — Ilustrasi pilihan benda **Wadah Tertutup Rapat** untuk misi *Menyimpan Makanan Mudah Basi* (gunung-033).
+- [x] `lemari-pendingin-kulkas.png` — Ilustrasi pilihan benda **Lemari Pendingin (Kulkas)** untuk misi *Menyimpan Makanan Mudah Basi* (gunung-033).
+- [x] `jumlah-pengunjung.png` — Ilustrasi pilihan benda **Jumlah Pengunjung** untuk misi *Membeli Tiket Masuk Museum* (gunung-034).
+- [x] `harga-tiket-per-orang.png` — Ilustrasi pilihan benda **Harga Tiket per Orang** untuk misi *Membeli Tiket Masuk Museum* (gunung-034).
+- [x] `kok-shuttlecock.png` — Ilustrasi pilihan benda **Kok (Shuttlecock)** untuk misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
+- [x] `kabel-dan-adaptor-charger.png` — Ilustrasi pilihan benda **Kabel & Adaptor Charger** untuk misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
+- [x] `sumber-listrik-stopkontak.png` — Ilustrasi pilihan benda **Sumber Listrik / Stopkontak** untuk misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
+- [x] `warna-lampu-penyeberangan.png` — Ilustrasi pilihan benda **Warna Lampu Penyeberangan** untuk misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
+- [x] `kondisi-lalu-lintas-kiri-kanan.png` — Ilustrasi pilihan benda **Kondisi Lalu Lintas Kiri-Kanan** untuk misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
+- [x] `kertas-warna-dan-gunting.png` — Ilustrasi pilihan benda **Kertas Warna & Gunting** untuk misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
+- [x] `lem-kertas-dan-kertas-dasar.png` — Ilustrasi pilihan benda **Lem Kertas & Kertas Dasar** untuk misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
+- [x] `daftar-nilai-setiap-ulangan.png` — Ilustrasi pilihan benda **Daftar Nilai Setiap Ulangan** untuk misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
+- [x] `banyaknya-ulangan-yang-diikuti.png` — Ilustrasi pilihan benda **Banyaknya Ulangan yang Diikuti** untuk misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
+- [x] `pakaian-renang.png` — Ilustrasi pilihan benda **Pakaian Renang** untuk misi *Berenang di Kolam Renang Olahraga* (gunung-040).
+- [x] `lebar-sungai.png` — Ilustrasi pilihan benda **Lebar Sungai** untuk misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
+- [x] `panjang-dan-kekuatan-kayu.png` — Ilustrasi pilihan benda **Panjang & Kekuatan Kayu** untuk misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
+- [x] `air-bersih-dan-filter-oksigen.png` — Ilustrasi pilihan benda **Air Bersih & Filter Oksigen** untuk misi *Merawat Ikan Hias di Akuarium* (gunung-042).
+- [x] `pakan-ikan-teratur.png` — Ilustrasi pilihan benda **Pakan Ikan Teratur** untuk misi *Merawat Ikan Hias di Akuarium* (gunung-042).
+- [x] `kertas-kado.png` — Ilustrasi pilihan benda **Kertas Kado** untuk misi *Membungkus Kado Ulang Tahun* (gunung-043).
+- [x] `gunting-dan-selotip.png` — Ilustrasi pilihan benda **Gunting & Selotip** untuk misi *Membungkus Kado Ulang Tahun* (gunung-043).
+- [x] `nama-nomor-ruang-kelas.png` — Ilustrasi pilihan benda **Nama / Nomor Ruang Kelas** untuk misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
+- [x] `denah-gedung-sekolah.png` — Ilustrasi pilihan benda **Denah Gedung Sekolah** untuk misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
+- [x] `telur-ayam-dan-sedikit-garam.png` — Ilustrasi pilihan benda **Telur Ayam & Sedikit Garam** untuk misi *Membuat Telur Dadar di Dapur* (gunung-045).
+- [x] `wajan-dan-kompor.png` — Ilustrasi pilihan benda **Wajan & Kompor** untuk misi *Membuat Telur Dadar di Dapur* (gunung-045).
+- [x] `alat-timbangan-yang-tepat.png` — Ilustrasi pilihan benda **Alat Timbangan yang Tepat** untuk misi *Menimbang Berat Buah di Pasar* (gunung-046).
+- [x] `angka-berat-pada-timbangan.png` — Ilustrasi pilihan benda **Angka Berat pada Timbangan** untuk misi *Menimbang Berat Buah di Pasar* (gunung-046).
+- [x] `huruf-awal-judul-buku.png` — Ilustrasi pilihan benda **Huruf Awal Judul Buku** untuk misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
+- [x] `urutan-abjad-a-sampai-z.png` — Ilustrasi pilihan benda **Urutan Abjad A sampai Z** untuk misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
+- [x] `sinar-matahari-dan-angin.png` — Ilustrasi pilihan benda **Sinar Matahari & Angin** untuk misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
+- [x] `tiang-jemuran-dan-jepitan.png` — Ilustrasi pilihan benda **Tiang Jemuran & Jepitan** untuk misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
+- [x] `teks-pesan-bersandi.png` — Ilustrasi pilihan benda **Teks Pesan Bersandi** untuk misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
+- [x] `jumlah-geseran-huruf-kunci.png` — Ilustrasi pilihan benda **Jumlah Geseran Huruf (Kunci)** untuk misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
+- [x] `buku-pelajaran-jadwal-senin.png` — Ilustrasi pilihan benda **Buku Pelajaran Jadwal Senin** untuk misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
+- [x] `kotak-pensil-dan-alat-tulis.png` — Ilustrasi pilihan benda **Kotak Pensil & Alat Tulis** untuk misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
 
 ### 2. Kategori Benda & Informasi Tidak Penting / Pengecoh (100 Aset)
 
-- [ ] `mainan-mobil-remote.png` — Ilustrasi pilihan benda **Mainan Mobil Remote** pada misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
-- [ ] `bantal-sofa-besar.png` — Ilustrasi pilihan benda **Bantal Sofa Besar** pada misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
-- [ ] `kacamata-hitam-pantai.png` — Ilustrasi pilihan benda **Kacamata Hitam Pantai** pada misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
-- [ ] `raket-bulu-tangkis.png` — Ilustrasi pilihan benda **Raket Bulu Tangkis** pada misi *Menyeberangi Gua yang Gelap Gulita* (digunakan pada misi gunung-002, gunung-035).
-- [ ] `kuas-lukis.png` — Ilustrasi pilihan benda **Kuas Lukis** pada misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
-- [ ] `kapur-tulis.png` — Ilustrasi pilihan benda **Kapur Tulis** pada misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
-- [ ] `stik-konsol-game.png` — Ilustrasi pilihan benda **Stik Konsol Game** pada misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
-- [ ] `helm-sepeda-balap.png` — Ilustrasi pilihan benda **Helm Sepeda Balap** pada misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
-- [ ] `warna-cat-papan.png` — Ilustrasi pilihan benda **Warna Cat Papan** pada misi *Menghitung Luas Persegi Panjang* (gunung-005).
-- [ ] `nama-pemilik-toko-kayu.png` — Ilustrasi pilihan benda **Nama Pemilik Toko Kayu** pada misi *Menghitung Luas Persegi Panjang* (gunung-005).
-- [ ] `layang-layang-kertas.png` — Ilustrasi pilihan benda **Layang-layang Kertas** pada misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
-- [ ] `kipas-angin-meja.png` — Ilustrasi pilihan benda **Kipas Angin Meja** pada misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
-- [ ] `garpu-makan.png` — Ilustrasi pilihan benda **Garpu Makan** pada misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
-- [ ] `kelereng-kaca.png` — Ilustrasi pilihan benda **Kelereng Kaca** pada misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
-- [ ] `panci-masak.png` — Ilustrasi pilihan benda **Panci Masak** pada misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
-- [ ] `sabun-cuci-piring.png` — Ilustrasi pilihan benda **Sabun Cuci Piring** pada misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
-- [ ] `warna-bel-sepeda.png` — Ilustrasi pilihan benda **Warna Bel Sepeda** pada misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
-- [ ] `merek-botol-minum.png` — Ilustrasi pilihan benda **Merek Botol Minum** pada misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
-- [ ] `akuarium-ikan-kaca.png` — Ilustrasi pilihan benda **Akuarium Ikan Kaca** pada misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
-- [ ] `setrika-listrik.png` — Ilustrasi pilihan benda **Setrika Listrik** pada misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
-- [ ] `sisir-rambut.png` — Ilustrasi pilihan benda **Sisir Rambut** pada misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
-- [ ] `kaos-kaki-tebal.png` — Ilustrasi pilihan benda **Kaos Kaki Tebal** pada misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
-- [ ] `warna-sepatu-pustakawan.png` — Ilustrasi pilihan benda **Warna Sepatu Pustakawan** pada misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
-- [ ] `jumlah-jendela-ruangan.png` — Ilustrasi pilihan benda **Jumlah Jendela Ruangan** pada misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
-- [ ] `obeng-besi.png` — Ilustrasi pilihan benda **Obeng Besi** pada misi *Membuat Jus Jeruk Segar* (gunung-013).
-- [ ] `bola-sepak.png` — Ilustrasi pilihan benda **Bola Sepak** pada misi *Membuat Jus Jeruk Segar* (gunung-013).
-- [ ] `stiker-hiasan-roda.png` — Ilustrasi pilihan benda **Stiker Hiasan Roda** pada misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
-- [ ] `boneka-beruang-besar.png` — Ilustrasi pilihan benda **Boneka Beruang Besar** pada misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
-- [ ] `warna-kantong-belanja.png` — Ilustrasi pilihan benda **Warna Kantong Belanja** pada misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
-- [ ] `cuaca-di-luar-toko.png` — Ilustrasi pilihan benda **Cuaca di Luar Toko** pada misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
-- [ ] `sendok-sayur.png` — Ilustrasi pilihan benda **Sendok Sayur** pada misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
-- [ ] `peluit-olahraga.png` — Ilustrasi pilihan benda **Peluit Olahraga** pada misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
-- [ ] `sapu-lidi-halaman.png` — Ilustrasi pilihan benda **Sapu Lidi Halaman** pada misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
-- [ ] `jam-dinding-besar.png` — Ilustrasi pilihan benda **Jam Dinding Besar** pada misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
-- [ ] `makanan-favorit-kurir.png` — Ilustrasi pilihan benda **Makanan Favorit Kurir** pada misi *Mengirim Surat Pos ke Teman* (gunung-018).
-- [ ] `merk-pena-yang-dipakai.png` — Ilustrasi pilihan benda **Merk Pena yang Dipakai** pada misi *Mengirim Surat Pos ke Teman* (gunung-018).
-- [ ] `penggaris-plastik.png` — Ilustrasi pilihan benda **Penggaris Plastik** pada misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
-- [ ] `topi-pantai.png` — Ilustrasi pilihan benda **Topi Pantai** pada misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
-- [ ] `warna-tali-sepatu-pelari.png` — Ilustrasi pilihan benda **Warna Tali Sepatu Pelari** pada misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
-- [ ] `gaya-rambut-pelari.png` — Ilustrasi pilihan benda **Gaya Rambut Pelari** pada misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
-- [ ] `batu-baterai.png` — Ilustrasi pilihan benda **Batu Baterai** pada misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
-- [ ] `kapur-barus.png` — Ilustrasi pilihan benda **Kapur Barus** pada misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
-- [ ] `warna-sprei-kasur.png` — Ilustrasi pilihan benda **Warna Sprei Kasur** pada misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
-- [ ] `judul-film-di-televisi.png` — Ilustrasi pilihan benda **Judul Film di Televisi** pada misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
-- [ ] `bantal-leher.png` — Ilustrasi pilihan benda **Bantal Leher** pada misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
-- [ ] `kacamata-renang.png` — Ilustrasi pilihan benda **Kacamata Renang** pada misi *Menyiram Tanaman Kebun Saat Kemarau* (digunakan pada misi gunung-023, gunung-040).
-- [ ] `kemoceng-bulu.png` — Ilustrasi pilihan benda **Kemoceng Bulu** pada misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
-- [ ] `piring-keramik.png` — Ilustrasi pilihan benda **Piring Keramik** pada misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
-- [ ] `jenis-rumput-lapangan.png` — Ilustrasi pilihan benda **Jenis Rumput Lapangan** pada misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
-- [ ] `jumlah-burung-di-pohon.png` — Ilustrasi pilihan benda **Jumlah Burung di Pohon** pada misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
-- [ ] `mainan-gasing-berisik.png` — Ilustrasi pilihan benda **Mainan Gasing Berisik** pada misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
-- [ ] `komik-cerita-lucu.png` — Ilustrasi pilihan benda **Komik Cerita Lucu** pada misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
-- [ ] `batu-bata-berat.png` — Ilustrasi pilihan benda **Batu Bata Berat** pada misi *Membuat Layang-layang Sederhana* (gunung-027).
-- [ ] `gelas-kaca-tebal.png` — Ilustrasi pilihan benda **Gelas Kaca Tebal** pada misi *Membuat Layang-layang Sederhana* (gunung-027).
-- [ ] `warna-dinding-stasiun.png` — Ilustrasi pilihan benda **Warna Dinding Stasiun** pada misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
-- [ ] `nama-masinis-cadangan.png` — Ilustrasi pilihan benda **Nama Masinis Cadangan** pada misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
-- [ ] `rautan-pensil.png` — Ilustrasi pilihan benda **Rautan Pensil** pada misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
-- [ ] `topi-ulang-tahun.png` — Ilustrasi pilihan benda **Topi Ulang Tahun** pada misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
-- [ ] `kelereng-warna-warni.png` — Ilustrasi pilihan benda **Kelereng Warna-warni** pada misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
-- [ ] `koran-bekas.png` — Ilustrasi pilihan benda **Koran Bekas** pada misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
-- [ ] `kacamata-selam.png` — Ilustrasi pilihan benda **Kacamata Selam** pada misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
-- [ ] `payung-pantai-besar.png` — Ilustrasi pilihan benda **Payung Pantai Besar** pada misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
-- [ ] `hobi-olahraga-siswa.png` — Ilustrasi pilihan benda **Hobi Olahraga Siswa** pada misi *Menentukan Ukuran Baju Seragam* (gunung-032).
-- [ ] `nama-hewan-peliharaan.png` — Ilustrasi pilihan benda **Nama Hewan Peliharaan** pada misi *Menentukan Ukuran Baju Seragam* (gunung-032).
-- [ ] `rak-sepatu-luar.png` — Ilustrasi pilihan benda **Rak Sepatu Luar** pada misi *Menyimpan Makanan Mudah Basi* (gunung-033).
-- [ ] `mainan-balok-kayu.png` — Ilustrasi pilihan benda **Mainan Balok Kayu** pada misi *Menyimpan Makanan Mudah Basi* (gunung-033).
-- [ ] `warna-mobil-di-parkiran.png` — Ilustrasi pilihan benda **Warna Mobil di Parkiran** pada misi *Membeli Tiket Masuk Museum* (gunung-034).
-- [ ] `merk-jam-tangan-penjaga.png` — Ilustrasi pilihan benda **Merk Jam Tangan Penjaga** pada misi *Membeli Tiket Masuk Museum* (gunung-034).
-- [ ] `dayung-perahu.png` — Ilustrasi pilihan benda **Dayung Perahu** pada misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
-- [ ] `bola-basket-berat.png` — Ilustrasi pilihan benda **Bola Basket Berat** pada misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
-- [ ] `gunting-kertas.png` — Ilustrasi pilihan benda **Gunting Kertas** pada misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
-- [ ] `botol-kecap.png` — Ilustrasi pilihan benda **Botol Kecap** pada misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
-- [ ] `iklan-di-papan-reklame.png` — Ilustrasi pilihan benda **Iklan di Papan Reklame** pada misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
-- [ ] `warna-jaket-pejalan-lain.png` — Ilustrasi pilihan benda **Warna Jaket Pejalan Lain** pada misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
-- [ ] `palu-besi.png` — Ilustrasi pilihan benda **Palu Besi** pada misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
-- [ ] `wajan-penggorengan.png` — Ilustrasi pilihan benda **Wajan Penggorengan** pada misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
-- [ ] `nomor-bangku-duduk-siswa.png` — Ilustrasi pilihan benda **Nomor Bangku Duduk Siswa** pada misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
-- [ ] `warna-sampul-buku-tulis.png` — Ilustrasi pilihan benda **Warna Sampul Buku Tulis** pada misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
-- [ ] `sepatu-boot-lumpur.png` — Ilustrasi pilihan benda **Sepatu Boot Lumpur** pada misi *Berenang di Kolam Renang Olahraga* (gunung-040).
-- [ ] `selimut-wol-tebal.png` — Ilustrasi pilihan benda **Selimut Wol Tebal** pada misi *Berenang di Kolam Renang Olahraga* (gunung-040).
-- [ ] `jumlah-ikan-di-sungai.png` — Ilustrasi pilihan benda **Jumlah Ikan di Sungai** pada misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
-- [ ] `bentuk-awan-di-langit.png` — Ilustrasi pilihan benda **Bentuk Awan di Langit** pada misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
-- [ ] `kapur-tulis-papan.png` — Ilustrasi pilihan benda **Kapur Tulis Papan** pada misi *Merawat Ikan Hias di Akuarium* (gunung-042).
-- [ ] `tali-sepatu.png` — Ilustrasi pilihan benda **Tali Sepatu** pada misi *Merawat Ikan Hias di Akuarium* (gunung-042).
-- [ ] `saringan-santan.png` — Ilustrasi pilihan benda **Saringan Santan** pada misi *Membungkus Kado Ulang Tahun* (gunung-043).
-- [ ] `cangkul-kebun.png` — Ilustrasi pilihan benda **Cangkul Kebun** pada misi *Membungkus Kado Ulang Tahun* (gunung-043).
-- [ ] `jumlah-anak-tangga-kantin.png` — Ilustrasi pilihan benda **Jumlah Anak Tangga Kantin** pada misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
-- [ ] `warna-pot-bunga-gerbang.png` — Ilustrasi pilihan benda **Warna Pot Bunga Gerbang** pada misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
-- [ ] `jangka-gambar-besi.png` — Ilustrasi pilihan benda **Jangka Gambar Besi** pada misi *Membuat Telur Dadar di Dapur* (gunung-045).
-- [ ] `bola-pingpong.png` — Ilustrasi pilihan benda **Bola Pingpong** pada misi *Membuat Telur Dadar di Dapur* (gunung-045).
-- [ ] `warna-baju-penjual-buah.png` — Ilustrasi pilihan benda **Warna Baju Penjual Buah** pada misi *Menimbang Berat Buah di Pasar* (gunung-046).
-- [ ] `lagu-yang-diputar-di-pasar.png` — Ilustrasi pilihan benda **Lagu yang Diputar di Pasar** pada misi *Menimbang Berat Buah di Pasar* (gunung-046).
-- [ ] `ketebalan-halaman-buku.png` — Ilustrasi pilihan benda **Ketebalan Halaman Buku** pada misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
-- [ ] `harga-beli-buku.png` — Ilustrasi pilihan benda **Harga Beli Buku** pada misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
-- [ ] `lampu-tidur-kamar.png` — Ilustrasi pilihan benda **Lampu Tidur Kamar** pada misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
-- [ ] `kamus-bahasa-tebal.png` — Ilustrasi pilihan benda **Kamus Bahasa Tebal** pada misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
-- [ ] `jenis-kertas-catatan.png` — Ilustrasi pilihan benda **Jenis Kertas Catatan** pada misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
-- [ ] `warna-tinta-pena.png` — Ilustrasi pilihan benda **Warna Tinta Pena** pada misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
-- [ ] `bantal-guling-tidur.png` — Ilustrasi pilihan benda **Bantal Guling Tidur** pada misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
-- [ ] `pot-tanaman-tanah-liat.png` — Ilustrasi pilihan benda **Pot Tanaman Tanah Liat** pada misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
+- [x] `mainan-mobil-remote.png` — Ilustrasi pilihan benda **Mainan Mobil Remote** pada misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
+- [x] `bantal-sofa-besar.png` — Ilustrasi pilihan benda **Bantal Sofa Besar** pada misi *Mendaki Puncak Gunung yang Dingin* (gunung-001).
+- [x] `kacamata-hitam-pantai.png` — Ilustrasi pilihan benda **Kacamata Hitam Pantai** pada misi *Menyeberangi Gua yang Gelap Gulita* (gunung-002).
+- [x] `raket-bulu-tangkis.png` — Ilustrasi pilihan benda **Raket Bulu Tangkis** pada misi *Menyeberangi Gua yang Gelap Gulita* (digunakan pada misi gunung-002, gunung-035).
+- [x] `kuas-lukis.png` — Ilustrasi pilihan benda **Kuas Lukis** pada misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
+- [x] `kapur-tulis.png` — Ilustrasi pilihan benda **Kapur Tulis** pada misi *Membuat Teh Hangat di Perkemahan* (gunung-003).
+- [x] `stik-konsol-game.png` — Ilustrasi pilihan benda **Stik Konsol Game** pada misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
+- [x] `helm-sepeda-balap.png` — Ilustrasi pilihan benda **Helm Sepeda Balap** pada misi *Menanam Bibit Bunga di Taman Desa* (gunung-004).
+- [x] `warna-cat-papan.png` — Ilustrasi pilihan benda **Warna Cat Papan** pada misi *Menghitung Luas Persegi Panjang* (gunung-005).
+- [x] `nama-pemilik-toko-kayu.png` — Ilustrasi pilihan benda **Nama Pemilik Toko Kayu** pada misi *Menghitung Luas Persegi Panjang* (gunung-005).
+- [x] `layang-layang-kertas.png` — Ilustrasi pilihan benda **Layang-layang Kertas** pada misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
+- [x] `kipas-angin-meja.png` — Ilustrasi pilihan benda **Kipas Angin Meja** pada misi *Berjalan Kaki Saat Hujan Deras* (gunung-006).
+- [x] `garpu-makan.png` — Ilustrasi pilihan benda **Garpu Makan** pada misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
+- [x] `kelereng-kaca.png` — Ilustrasi pilihan benda **Kelereng Kaca** pada misi *Mengobati Luka Gores Kecil di Jari* (gunung-007).
+- [x] `panci-masak.png` — Ilustrasi pilihan benda **Panci Masak** pada misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
+- [x] `sabun-cuci-piring.png` — Ilustrasi pilihan benda **Sabun Cuci Piring** pada misi *Menggambar Sketsa Peta di Kertas* (gunung-008).
+- [x] `warna-bel-sepeda.png` — Ilustrasi pilihan benda **Warna Bel Sepeda** pada misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
+- [x] `merek-botol-minum.png` — Ilustrasi pilihan benda **Merek Botol Minum** pada misi *Menentukan Waktu Tempuh Perjalanan* (gunung-009).
+- [x] `akuarium-ikan-kaca.png` — Ilustrasi pilihan benda **Akuarium Ikan Kaca** pada misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
+- [x] `setrika-listrik.png` — Ilustrasi pilihan benda **Setrika Listrik** pada misi *Mendirikan Tenda di Padang Rumput* (gunung-010).
+- [x] `sisir-rambut.png` — Ilustrasi pilihan benda **Sisir Rambut** pada misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
+- [x] `kaos-kaki-tebal.png` — Ilustrasi pilihan benda **Kaos Kaki Tebal** pada misi *Membersihkan Gigi Sebelum Tidur* (gunung-011).
+- [x] `warna-sepatu-pustakawan.png` — Ilustrasi pilihan benda **Warna Sepatu Pustakawan** pada misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
+- [x] `jumlah-jendela-ruangan.png` — Ilustrasi pilihan benda **Jumlah Jendela Ruangan** pada misi *Mencari Buku di Perpustakaan Sekolah* (gunung-012).
+- [x] `obeng-besi.png` — Ilustrasi pilihan benda **Obeng Besi** pada misi *Membuat Jus Jeruk Segar* (gunung-013).
+- [x] `bola-sepak.png` — Ilustrasi pilihan benda **Bola Sepak** pada misi *Membuat Jus Jeruk Segar* (gunung-013).
+- [x] `stiker-hiasan-roda.png` — Ilustrasi pilihan benda **Stiker Hiasan Roda** pada misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
+- [x] `boneka-beruang-besar.png` — Ilustrasi pilihan benda **Boneka Beruang Besar** pada misi *Bersepeda dengan Aman di Jalan Desa* (gunung-014).
+- [x] `warna-kantong-belanja.png` — Ilustrasi pilihan benda **Warna Kantong Belanja** pada misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
+- [x] `cuaca-di-luar-toko.png` — Ilustrasi pilihan benda **Cuaca di Luar Toko** pada misi *Menghitung Kembalian Belanja di Koperasi* (gunung-015).
+- [x] `sendok-sayur.png` — Ilustrasi pilihan benda **Sendok Sayur** pada misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
+- [x] `peluit-olahraga.png` — Ilustrasi pilihan benda **Peluit Olahraga** pada misi *Memperbaiki Kancing Baju yang Lepas* (gunung-016).
+- [x] `sapu-lidi-halaman.png` — Ilustrasi pilihan benda **Sapu Lidi Halaman** pada misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
+- [x] `jam-dinding-besar.png` — Ilustrasi pilihan benda **Jam Dinding Besar** pada misi *Menyeberang Sungai Menggunakan Perahu Dayung* (gunung-017).
+- [x] `makanan-favorit-kurir.png` — Ilustrasi pilihan benda **Makanan Favorit Kurir** pada misi *Mengirim Surat Pos ke Teman* (gunung-018).
+- [x] `merk-pena-yang-dipakai.png` — Ilustrasi pilihan benda **Merk Pena yang Dipakai** pada misi *Mengirim Surat Pos ke Teman* (gunung-018).
+- [x] `penggaris-plastik.png` — Ilustrasi pilihan benda **Penggaris Plastik** pada misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
+- [x] `topi-pantai.png` — Ilustrasi pilihan benda **Topi Pantai** pada misi *Mencuci Tangan Agar Bersih dari Kuman* (gunung-019).
+- [x] `warna-tali-sepatu-pelari.png` — Ilustrasi pilihan benda **Warna Tali Sepatu Pelari** pada misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
+- [x] `gaya-rambut-pelari.png` — Ilustrasi pilihan benda **Gaya Rambut Pelari** pada misi *Menentukan Pemenang Lomba Lari Cepat* (gunung-020).
+- [x] `batu-baterai.png` — Ilustrasi pilihan benda **Batu Baterai** pada misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
+- [x] `kapur-barus.png` — Ilustrasi pilihan benda **Kapur Barus** pada misi *Membuat Roti Lapis (Sandwich) untuk Bekal* (gunung-021).
+- [x] `warna-sprei-kasur.png` — Ilustrasi pilihan benda **Warna Sprei Kasur** pada misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
+- [x] `judul-film-di-televisi.png` — Ilustrasi pilihan benda **Judul Film di Televisi** pada misi *Mengukur Suhu Tubuh Saat Demam* (gunung-022).
+- [x] `bantal-leher.png` — Ilustrasi pilihan benda **Bantal Leher** pada misi *Menyiram Tanaman Kebun Saat Kemarau* (gunung-023).
+- [x] `kacamata-renang.png` — Ilustrasi pilihan benda **Kacamata Renang** pada misi *Menyiram Tanaman Kebun Saat Kemarau* (digunakan pada misi gunung-023, gunung-040).
+- [x] `kemoceng-bulu.png` — Ilustrasi pilihan benda **Kemoceng Bulu** pada misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
+- [x] `piring-keramik.png` — Ilustrasi pilihan benda **Piring Keramik** pada misi *Membuka Pintu Gerbang yang Terkunci Gembok* (gunung-024).
+- [x] `jenis-rumput-lapangan.png` — Ilustrasi pilihan benda **Jenis Rumput Lapangan** pada misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
+- [x] `jumlah-burung-di-pohon.png` — Ilustrasi pilihan benda **Jumlah Burung di Pohon** pada misi *Menghitung Keliling Lapangan Segitiga* (gunung-025).
+- [x] `mainan-gasing-berisik.png` — Ilustrasi pilihan benda **Mainan Gasing Berisik** pada misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
+- [x] `komik-cerita-lucu.png` — Ilustrasi pilihan benda **Komik Cerita Lucu** pada misi *Belajar Menghadapi Ujian Matematika* (gunung-026).
+- [x] `batu-bata-berat.png` — Ilustrasi pilihan benda **Batu Bata Berat** pada misi *Membuat Layang-layang Sederhana* (gunung-027).
+- [x] `gelas-kaca-tebal.png` — Ilustrasi pilihan benda **Gelas Kaca Tebal** pada misi *Membuat Layang-layang Sederhana* (gunung-027).
+- [x] `warna-dinding-stasiun.png` — Ilustrasi pilihan benda **Warna Dinding Stasiun** pada misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
+- [x] `nama-masinis-cadangan.png` — Ilustrasi pilihan benda **Nama Masinis Cadangan** pada misi *Menentukan Jadwal Keberangkatan Kereta* (gunung-028).
+- [x] `rautan-pensil.png` — Ilustrasi pilihan benda **Rautan Pensil** pada misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
+- [x] `topi-ulang-tahun.png` — Ilustrasi pilihan benda **Topi Ulang Tahun** pada misi *Membersihkan Lantai Kamar yang Berdebu* (gunung-029).
+- [x] `kelereng-warna-warni.png` — Ilustrasi pilihan benda **Kelereng Warna-warni** pada misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
+- [x] `koran-bekas.png` — Ilustrasi pilihan benda **Koran Bekas** pada misi *Menanak Nasi dengan Penanak Nasi (Rice Cooker)* (gunung-030).
+- [x] `kacamata-selam.png` — Ilustrasi pilihan benda **Kacamata Selam** pada misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
+- [x] `payung-pantai-besar.png` — Ilustrasi pilihan benda **Payung Pantai Besar** pada misi *Melakukan Pengamatan Bintang di Malam Hari* (gunung-031).
+- [x] `hobi-olahraga-siswa.png` — Ilustrasi pilihan benda **Hobi Olahraga Siswa** pada misi *Menentukan Ukuran Baju Seragam* (gunung-032).
+- [x] `nama-hewan-peliharaan.png` — Ilustrasi pilihan benda **Nama Hewan Peliharaan** pada misi *Menentukan Ukuran Baju Seragam* (gunung-032).
+- [x] `rak-sepatu-luar.png` — Ilustrasi pilihan benda **Rak Sepatu Luar** pada misi *Menyimpan Makanan Mudah Basi* (gunung-033).
+- [x] `mainan-balok-kayu.png` — Ilustrasi pilihan benda **Mainan Balok Kayu** pada misi *Menyimpan Makanan Mudah Basi* (gunung-033).
+- [x] `warna-mobil-di-parkiran.png` — Ilustrasi pilihan benda **Warna Mobil di Parkiran** pada misi *Membeli Tiket Masuk Museum* (gunung-034).
+- [x] `merk-jam-tangan-penjaga.png` — Ilustrasi pilihan benda **Merk Jam Tangan Penjaga** pada misi *Membeli Tiket Masuk Museum* (gunung-034).
+- [x] `dayung-perahu.png` — Ilustrasi pilihan benda **Dayung Perahu** pada misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
+- [x] `bola-basket-berat.png` — Ilustrasi pilihan benda **Bola Basket Berat** pada misi *Bermain Bulu Tangkis Bersama Teman* (gunung-035).
+- [x] `gunting-kertas.png` — Ilustrasi pilihan benda **Gunting Kertas** pada misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
+- [x] `botol-kecap.png` — Ilustrasi pilihan benda **Botol Kecap** pada misi *Mengisi Daya Baterai Tablet Belajar* (gunung-036).
+- [x] `iklan-di-papan-reklame.png` — Ilustrasi pilihan benda **Iklan di Papan Reklame** pada misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
+- [x] `warna-jaket-pejalan-lain.png` — Ilustrasi pilihan benda **Warna Jaket Pejalan Lain** pada misi *Menyeberang Jalan Raya di Zebra Cross* (gunung-037).
+- [x] `palu-besi.png` — Ilustrasi pilihan benda **Palu Besi** pada misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
+- [x] `wajan-penggorengan.png` — Ilustrasi pilihan benda **Wajan Penggorengan** pada misi *Membuat Kolase Kertas di Kelas Seni* (gunung-038).
+- [x] `nomor-bangku-duduk-siswa.png` — Ilustrasi pilihan benda **Nomor Bangku Duduk Siswa** pada misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
+- [x] `warna-sampul-buku-tulis.png` — Ilustrasi pilihan benda **Warna Sampul Buku Tulis** pada misi *Menghitung Rata-rata Nilai Ulangan* (gunung-039).
+- [x] `sepatu-boot-lumpur.png` — Ilustrasi pilihan benda **Sepatu Boot Lumpur** pada misi *Berenang di Kolam Renang Olahraga* (gunung-040).
+- [x] `selimut-wol-tebal.png` — Ilustrasi pilihan benda **Selimut Wol Tebal** pada misi *Berenang di Kolam Renang Olahraga* (gunung-040).
+- [x] `jumlah-ikan-di-sungai.png` — Ilustrasi pilihan benda **Jumlah Ikan di Sungai** pada misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
+- [x] `bentuk-awan-di-langit.png` — Ilustrasi pilihan benda **Bentuk Awan di Langit** pada misi *Membuat Jembatan Darurat dari Batang Kayu* (gunung-041).
+- [x] `kapur-tulis-papan.png` — Ilustrasi pilihan benda **Kapur Tulis Papan** pada misi *Merawat Ikan Hias di Akuarium* (gunung-042).
+- [x] `tali-sepatu.png` — Ilustrasi pilihan benda **Tali Sepatu** pada misi *Merawat Ikan Hias di Akuarium* (gunung-042).
+- [x] `saringan-santan.png` — Ilustrasi pilihan benda **Saringan Santan** pada misi *Membungkus Kado Ulang Tahun* (gunung-043).
+- [x] `cangkul-kebun.png` — Ilustrasi pilihan benda **Cangkul Kebun** pada misi *Membungkus Kado Ulang Tahun* (gunung-043).
+- [x] `jumlah-anak-tangga-kantin.png` — Ilustrasi pilihan benda **Jumlah Anak Tangga Kantin** pada misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
+- [x] `warna-pot-bunga-gerbang.png` — Ilustrasi pilihan benda **Warna Pot Bunga Gerbang** pada misi *Mencari Lokasi Kelas Baru di Sekolah* (gunung-044).
+- [x] `jangka-gambar-besi.png` — Ilustrasi pilihan benda **Jangka Gambar Besi** pada misi *Membuat Telur Dadar di Dapur* (gunung-045).
+- [x] `bola-pingpong.png` — Ilustrasi pilihan benda **Bola Pingpong** pada misi *Membuat Telur Dadar di Dapur* (gunung-045).
+- [x] `warna-baju-penjual-buah.png` — Ilustrasi pilihan benda **Warna Baju Penjual Buah** pada misi *Menimbang Berat Buah di Pasar* (gunung-046).
+- [x] `lagu-yang-diputar-di-pasar.png` — Ilustrasi pilihan benda **Lagu yang Diputar di Pasar** pada misi *Menimbang Berat Buah di Pasar* (gunung-046).
+- [x] `ketebalan-halaman-buku.png` — Ilustrasi pilihan benda **Ketebalan Halaman Buku** pada misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
+- [x] `harga-beli-buku.png` — Ilustrasi pilihan benda **Harga Beli Buku** pada misi *Menyusun Buku Berdasarkan Urutan Abjad* (gunung-047).
+- [x] `lampu-tidur-kamar.png` — Ilustrasi pilihan benda **Lampu Tidur Kamar** pada misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
+- [x] `kamus-bahasa-tebal.png` — Ilustrasi pilihan benda **Kamus Bahasa Tebal** pada misi *Menjemur Pakaian Basah Agar Cepat Kering* (gunung-048).
+- [x] `jenis-kertas-catatan.png` — Ilustrasi pilihan benda **Jenis Kertas Catatan** pada misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
+- [x] `warna-tinta-pena.png` — Ilustrasi pilihan benda **Warna Tinta Pena** pada misi *Membuat Sandi Rahasia dengan Geseran Huruf* (gunung-049).
+- [x] `bantal-guling-tidur.png` — Ilustrasi pilihan benda **Bantal Guling Tidur** pada misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).
+- [x] `pot-tanaman-tanah-liat.png` — Ilustrasi pilihan benda **Pot Tanaman Tanah Liat** pada misi *Menyiapkan Tas Sekolah untuk Hari Senin* (gunung-050).

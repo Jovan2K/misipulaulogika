@@ -92,19 +92,19 @@ body.latar-desa .lencana-wilayah {
 }
 
 .kartu-ubin-pola {
-    width: 118px;
+    width: 122px;
     min-height: 142px;
     background-color: var(--desa-kayu);
     border: 3px solid var(--ui-garis-pixel);
     outline: 2px solid var(--desa-krem);
     outline-offset: -5px;
     box-shadow: var(--bayangan-kartu);
-    padding: 12px;
+    padding: 10px 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     position: relative;
 }
 
@@ -135,7 +135,7 @@ body.latar-desa .lencana-wilayah {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--desa-jerami);
     background-color: #2b1d12;
@@ -145,10 +145,14 @@ body.latar-desa .lencana-wilayah {
 
 .label-ubin-pola {
     font-family: var(--font-pixel-ui);
-    font-size: 18px;
+    font-size: 12px;
+    line-height: 1.2;
     font-weight: 700;
     color: var(--desa-krem);
     text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* Pilihan Opsi Jawaban di Kolom Kanan */
@@ -188,7 +192,7 @@ body.latar-desa .lencana-wilayah {
     outline: 2px solid var(--desa-krem);
     outline-offset: -5px;
     box-shadow: var(--bayangan-tombol);
-    padding: 14px;
+    padding: 12px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;

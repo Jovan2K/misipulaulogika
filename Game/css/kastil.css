@@ -82,7 +82,7 @@ body.latar-kastil .lencana-wilayah {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    max-width: 396px;
+    max-width: 432px;
     margin: 14px auto;
     background-color: #211733;
     border: 4px solid var(--ui-garis-pixel);
@@ -92,15 +92,20 @@ body.latar-kastil .lencana-wilayah {
 .sel-grid-kastil {
     position: relative;
     aspect-ratio: 1 / 1;
-    min-height: 82px;
+    min-height: 90px;
     background-color: var(--kastil-ungu-lembut);
     border: 3px solid var(--ui-garis-pixel);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6px;
+    padding: 4px;
     overflow: hidden;
+}
+
+.sel-grid-kastil > img {
+    width: 44px;
+    height: 44px;
 }
 
 .sel-grid-kastil.sel-awal {
@@ -131,10 +136,13 @@ body.latar-kastil .lencana-wilayah {
 
 .label-kecil-sel {
     font-family: var(--font-pixel-ui);
-    font-size: 18px;
+    font-size: 10px;
+    line-height: 1.15;
     font-weight: 700;
     color: var(--ui-teks-utama);
     margin-top: 2px;
+    text-align: center;
+    max-width: 100%;
 }
 
 .lapisan-token-pemain {

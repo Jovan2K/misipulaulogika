@@ -16,7 +16,7 @@ body.latar-gunung {
 }
 
 body.latar-gunung .wadah-utama {
-    max-width: 1380px;
+    max-width: 1440px;
 }
 
 body.latar-gunung .panel-game {
@@ -32,7 +32,7 @@ body.latar-gunung .lencana-wilayah {
 /* Tata Letak Dua Kolom Landscape: Kolom Kiri (Soal/Pertanyaan) & Kolom Kanan (Pilihan Benda/Jawaban) */
 .arena-utama-gunung {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
     gap: 24px;
     align-items: start;
     margin: 18px 0;
@@ -91,15 +91,16 @@ body.latar-gunung .lencana-wilayah {
     outline: 2px solid var(--gunung-abu-terang);
     outline-offset: -6px;
     box-shadow: var(--bayangan-kartu);
-    padding: 22px;
+    padding: 20px;
     margin-bottom: 0;
     text-align: center;
+    width: 100%;
 }
 
 .grid-objek-gunung {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
     margin-top: 14px;
 }
 
@@ -109,12 +110,14 @@ body.latar-gunung .lencana-wilayah {
     outline: 2px solid var(--gunung-biru-dingin);
     outline-offset: -5px;
     box-shadow: var(--bayangan-kartu);
-    padding: 18px;
+    padding: 14px;
+    min-width: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 10px;
     cursor: grab;
 }
 
@@ -127,26 +130,34 @@ body.latar-gunung .lencana-wilayah {
 .nama-objek-gunung {
     font-family: var(--font-pixel-ui);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.3;
     color: var(--gunung-putih);
-    min-height: 2.4em;
+    min-height: 2.6em;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .aksi-cepat-objek {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
     width: 100%;
     margin-top: auto;
 }
 
 .tombol-pilih-kategori {
     font-family: var(--font-pixel-ui);
-    flex: 1;
-    min-height: 48px;
-    padding: 10px 12px;
-    font-size: 18px;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 46px;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 1.2;
     font-weight: 700;
     border: 3px solid var(--ui-garis-pixel);
     box-shadow: var(--bayangan-tombol);
@@ -180,15 +191,16 @@ body.latar-gunung .lencana-wilayah {
 /* Kotak Kategori Drop Zone (Penting & Tidak Penting) */
 .arena-kategori-gunung {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
 }
 
 .kotak-kategori-abstraksi {
     min-height: 230px;
+    min-width: 0;
     border: 4px solid var(--ui-garis-pixel);
     box-shadow: var(--bayangan-kartu);
-    padding: 20px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -213,7 +225,7 @@ body.latar-gunung .lencana-wilayah {
 .kepala-kotak-kategori {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     margin-bottom: 14px;
     padding-bottom: 12px;
     border-bottom: 3px solid rgba(19, 28, 43, 0.45);
@@ -221,7 +233,8 @@ body.latar-gunung .lencana-wilayah {
 
 .judul-kotak-kategori {
     font-family: var(--font-pixel-ui);
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 1.25;
     font-weight: 700;
 }
 
@@ -244,13 +257,15 @@ body.latar-gunung .lencana-wilayah {
     font-family: var(--font-pixel-ui);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     background-color: #253547;
     border: 2px solid var(--gunung-biru-dingin);
-    padding: 10px 14px;
+    padding: 8px 12px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--gunung-putih);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 @media (max-width: 920px) {

@@ -27,6 +27,21 @@ function acakArrayGunung(daftar) {
 }
 
 /**
+ * Mengonversi nama objek menjadi jalur aset gambar spesifik di folder assets/images/objects/gunung/.
+ */
+function buatJalurGambarObjekGunung(namaObjek) {
+    if (!namaObjek) {
+        return "assets/images/objects/objek_penting.png";
+    }
+    const slug = String(namaObjek)
+        .replace(/&/g, "dan")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    return "assets/images/objects/gunung/" + slug + ".png";
+}
+
+/**
  * Memperbarui indikator tahap, progres objek, dan skor di halaman Gunung.
  */
 function perbaruiStatusGunung() {
@@ -81,18 +96,14 @@ function klasifikasikanObjekGunung(indeksObjek, kategoriPilihan) {
         if (wadahTarget) {
             const barisItem = document.createElement("div");
             barisItem.className = "item-terklasifikasi";
+            const jalurGambarItem = dataObjek.gambar || buatJalurGambarObjekGunung(dataObjek.nama);
+            const gambarCadangan = kategoriPilihan === "penting"
+                ? "assets/images/objects/objek_penting.png"
+                : "assets/images/objects/objek_tidak_penting.png";
 
-            if (kategoriPilihan === "penting") {
-                barisItem.innerHTML =
-                    "<!-- Gambar 46: objek_penting.png | Ukuran tampilan: 40x40 px | Aset: assets/images/objects/objek_penting.png -->" +
-                    '<img src="assets/images/objects/objek_penting.png" alt="Objek penting" width="40" height="40">' +
-                    "<span>" + dataObjek.nama + "</span>";
-            } else {
-                barisItem.innerHTML =
-                    "<!-- Gambar 47: objek_tidak_penting.png | Ukuran tampilan: 40x40 px | Aset: assets/images/objects/objek_tidak_penting.png -->" +
-                    '<img src="assets/images/objects/objek_tidak_penting.png" alt="Objek tidak penting" width="40" height="40">' +
-                    "<span>" + dataObjek.nama + "</span>";
-            }
+            barisItem.innerHTML =
+                '<img src="' + jalurGambarItem + '" onerror="this.onerror=null;this.src=\'' + gambarCadangan + '\';" alt="' + dataObjek.nama + '" width="40" height="40">' +
+                "<span>" + dataObjek.nama + "</span>";
 
             wadahTarget.appendChild(barisItem);
         }
@@ -185,9 +196,10 @@ function tampilkanSoalGunung() {
         kartu.setAttribute("data-indeks-objek", String(indeks));
         kartu.setAttribute("data-sfx-hover", "");
 
+        const jalurGambar = item.gambar || buatJalurGambarObjekGunung(item.nama);
+
         kartu.innerHTML =
-            "<!-- Gambar 46: objek_penting.png | Ukuran tampilan: 72x72 px | Aset: assets/images/objects/objek_penting.png -->" +
-            '<img src="assets/images/objects/objek_penting.png" alt="Objek ' + item.nama + '" width="72" height="72" draggable="false">' +
+            '<img src="' + jalurGambar + '" onerror="this.onerror=null;this.src=\'assets/images/objects/objek_penting.png\';" alt="Objek ' + item.nama + '" width="72" height="72" draggable="false">' +
             '<div class="nama-objek-gunung">' + item.nama + "</div>" +
             '<div class="aksi-cepat-objek">' +
             '<button type="button" class="tombol-pilih-kategori tombol-pilih-penting" data-sfx-hover data-sfx-click>Penting</button>' +
