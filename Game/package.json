@@ -1,0 +1,20 @@
+{
+  "name": "misipulaulogika-game",
+  "version": "1.0.0",
+  "description": "Misi Pulau Logika - Game Edukasi Computational Thinking",
+  "scripts": {
+    "dev": "echo 'Development server not configured'",
+    "build": "echo 'Build completed'",
+    "lint": "echo 'Linting not configured'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  },
+  "keywords": [
+    "game",
+    "education",
+    "computational-thinking"
+  ],
+  "author": "",
+  "license": "ISC"
+}
